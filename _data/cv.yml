@@ -43,7 +43,11 @@
     - year: 2019 - 2022
       items:
         - Dean's List 
-
+        
+- title: Publications
+  type: nested_list
+  contents:
+    - title: <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5210-8035&sort=date+desc">ADS Link</a>
 
 - title: Research Experience
   type: time_table
@@ -89,10 +93,16 @@
       items:
         - "AS.171.103 General Physics I (Undergrad, 39 students)"
 
-- title: Publications
-  type: nested_list
-  contents:
-    - title: <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5210-8035&sort=date+desc">ADS Link</a>
+- title: Industrial Experience
+  type: time_table
+  contents:   
+    - title: Quantitative Researcher
+      institution: Zhejiang Longwin Investment Ltd., Hangzhou, Zhejiang, China
+      year: 2021
+      description:
+        - "<b>High-Frequency Trading Backtest</b>: Backtested high-frequency trading based on Box Arbitrage. Constructed testing framework for quantitative strategies with high-performance python routines."
+        - "<b>Sentiment Investment</b>: Analyzed commodity trading strategy using market sentiment based on institutional investors' open interests."
+        - "<b>Factor Investment Strategy</b>: Helped to develop quantitative stock trading model based on analyst report and company earnings."
 
 
 - title: Skills

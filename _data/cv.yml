@@ -46,6 +46,8 @@
 
 
 - title: Research Experience
+  type: time_table
+  contents:   
     - title: Visiting Professor
       institution: California Institute of Technology, Pasadena, California, US
       year: 1933

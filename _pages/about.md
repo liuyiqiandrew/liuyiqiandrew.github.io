@@ -11,7 +11,7 @@ profile:
   address: >
     <p>Jadwin Hall</p>
     <p>Washington Road</p>
-    <p>Princeton, New Jersey 08544</p>
+    <p>Princeton, NJ 08544</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts

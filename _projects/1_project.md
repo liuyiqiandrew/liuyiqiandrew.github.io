@@ -1,11 +1,14 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Needlet ILC
+description: needlet internal linear combination algorithm
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: ordered
 ---
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+    {% include repository/repo.html repository="liuyiqiandrew/NILC" %}
+</div>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

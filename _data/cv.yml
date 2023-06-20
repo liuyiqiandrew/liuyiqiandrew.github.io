@@ -46,16 +46,6 @@
 
 
 - title: Research Experience
-  type: time_table
-  contents:
-    - title: Cosmology Large Angular Scale Surveyor
-      institution: Mentors:: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla
-      year: 2019 - 2023
-      description:
-        - Component Separation Algorithm: Implemented the needlet internal linear combination NILC for foreground component separation. Tested the algorithm under different foreground conditions. Used pixel covariance to reduce the NILC bias at large angular scale.
-        - Polarized Foreground Masks: Constructed masks based on polarized intensity with WMAP and Planck maps specific to the CLASS scanning region. Tested power spectrum estimator performances over different polarization masks.
-        - Instrumentation: Assisted in designing telescope components with SolidWorks. Assembled CLASS cryogenic receivers. Used Tormach CNC to produce infrared filters for the CLASS detector assembly.
-    
     - title: Visiting Professor
       institution: California Institute of Technology, Pasadena, California, US
       year: 1933

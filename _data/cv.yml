@@ -75,10 +75,24 @@
       year: 2023 jan
       institution: 241st Meeting of the American Astronomical Society, Seattle, WA
 
-- title: Academic Interests
+- title: Teaching
+  type: time_table
+  contents:
+    - year: 2023 spring
+      items: 
+        - "EN.553.430 Intro to Statistics (Undergrad, 14 students)"
+    - year: 2022 fall
+      items: 
+        - "EN.553.633 Monte Carlo Method (Graduate, 17 students)"
+        - "AS.171.103 General Physics I (Undergrad, 23 students)"
+    - year: 2020 fall
+      items:
+        - "AS.171.103 General Physics I (Undergrad, 39 students)"
+
+- title: Publications
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: "CSS1603+19: a low mass polar at the cataclysmic variable period minimum"
       items: 
         - Description 1.
         - Description 2.

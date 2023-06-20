@@ -4,7 +4,7 @@
     - name: Name
       value: Yiqi "Andrew" Liu
     - name: Location
-      value: Princeton, NJ
+      value: Princeton, NJ, United States
     - name: Email
       value: yl9946@princeton.edu
     - name: Telephone
@@ -17,19 +17,36 @@
       institution: Princeton University, Princeton, New Jersey, United States
       year: 2023 - present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: B.S. in Applied Math & Statistics, Physics, and Mathematics
+        - Research: Cosmic Microwave Background
+    - title: B.S. in Applied Math & Statistics, Physics, Mathematics
       institution: Johns Hopkins University, Baltimore, Maryland, United States
       year: 2019 - 2023
       description:
-        - GPA':' 3.99 / 4.0
-        - Departmental Honors':' Applied Math & Stats, Physics, Math
-        - Minor':' Computer Science
+        - GPA: 3.99 / 4.0
+        - Departmental Honors: Applied Math & Stats, Physics, Math
+        - Minor: Computer Science
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items: 
+        - Donald E. Kerr Memorial Award 
+        - Applied Mathematics and Statistics Achievement Award
+    - year: 2022
+      items: 
+        - Provost's Undergraduate Research Award
+        - Sigma Pi Sigma Physics Honors Society
+    - year: 2021
+      items:
+        - Bloomberg Distinguished Professor Research Fellowship
+    - year: 2020
+      items:
+        - Bloomberg Distinguished Professor Research Fellowship
+    - year: 2019 - 2022
+      items:
+        - Dean's List
+
 
 - title: Experience
   type: time_table
@@ -70,17 +87,6 @@
     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
       year: 2015-now
       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
 
 - title: Academic Interests
   type: nested_list

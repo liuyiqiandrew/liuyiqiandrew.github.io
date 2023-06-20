@@ -23,6 +23,8 @@ My name is Yiqi Liu (刘逸奇). I usually go by Andrew. I am currently a physic
 
 Before coming to Princeton, I finished my undergraduate degree at Johns Hopkins University majoring in applied math, physics, and pure math.
 
+At Hopkins, I worked with Prof. [Tobias Marriage](https://physics-astronomy.jhu.edu/directory/tobias-marriage/) and Prof. [Charles Bennett](https://physics-astronomy.jhu.edu/directory/charles-l-bennett/) on the [Cosmology Large Angular Scale Surveyor (CLASS)](https://sites.krieger.jhu.edu/class/) project. In addition, I worked with Prof. [Nadia Zakamska](http://zakamska.johnshopkins.edu/) researching a bizzare cataclysmic variable system.
+
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.

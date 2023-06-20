@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: "Under-maintained projects and bad jokes."
 nav: true
-nav_order: 2
+nav_order: 3
 display_categories: [ordered, chaotic]
 horizontal: false
 ---

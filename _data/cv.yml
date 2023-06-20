@@ -17,14 +17,14 @@
       institution: Princeton University, Princeton, New Jersey, United States
       year: 2023 - present
       description:
-        - "Research: Cosmic Microwave Background"
+        - "<b>Research:</b> Cosmic Microwave Background"
     - title: B.S. in Applied Math & Statistics, Physics, Mathematics
       institution: Johns Hopkins University, Baltimore, Maryland, United States
       year: 2019 - 2023
       description:
-        - "GPA: 3.99 / 4.0"
-        - "Departmental Honors: Applied Math & Stats, Physics, Math"
-        - "Minor: Computer Science"
+        - "<b>GPA:</b> 3.99 / 4.0"
+        - "<b>Departmental Honors:</b> Applied Math & Stats, Physics, Math"
+        - "<b>Minor:</b> Computer Science"
 
 - title: Honors and Awards
   type: time_table
@@ -52,17 +52,17 @@
       institution: "Mentors: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla"
       year: 2019 - 2023
       description:
-        - "Component Separation Algorithm: Implemented the needlet internal linear combination (NILC) for foreground component separation. Tested the algorithm under different foreground conditions. Used pixel covariance to reduce the NILC bias at large angular scale."
-        - "Polarized Foreground Masks: Constructed masks based on polarized intensity with WMAP and Planck maps specific to the CLASS scanning region. Tested power spectrum estimators' performances over different polarization masks."
-        - "Instrumentation: Assisted in designing telescope components with SolidWorks. Assembled CLASS cryogenic receivers. Used Tormach CNC to produce infrared filters for the CLASS detector assembly."
+        - "<b>Component Separation Algorithm</b>: Implemented the needlet internal linear combination (NILC) for foreground component separation. Tested the algorithm under different foreground conditions. Used pixel covariance to reduce the NILC bias at large angular scale."
+        - "<b>Polarized Foreground Masks</b>: Constructed masks based on polarized intensity with WMAP and Planck maps specific to the CLASS scanning region. Tested power spectrum estimators' performances over different polarization masks."
+        - "<b>Instrumentation</b>: Assisted in designing telescope components with SolidWorks. Assembled CLASS cryogenic receivers. Used Tormach CNC to produce infrared filters for the CLASS detector assembly."
 
     - title: Zakamska Stellar Astrophysics Group
       institution: "Mentor: Nadia L. Zakamska, Hsiang-Chih Hwang"
       year: 2021 - 2023
       description:
-        - "Cataclysmic Variable: First-authored paper on the puzzling cataclysmic variable CSS1603+19. Performed various analysis over infrared and optical observations. Demystified unusual emission structure from the system. Concluded with a physical model for this system including the stellar mass and radius of the system."
-        - "Time-Domain Astrophysics: Designed a range of routines for decoding photometry and spectroscopy observations. Identified fine line and continuum structure from large data sets."
-        - "PypeIt Data Reduction:} Reduce raw GNIRS near-infrared exposures with data-reduction pipeline PypeIt."
+        - "<b>Cataclysmic Variable</b>: First-authored paper on the puzzling cataclysmic variable CSS1603+19. Performed various analysis over infrared and optical observations. Demystified unusual emission structure from the system. Concluded with a physical model for this system including the stellar mass and radius of the system."
+        - "<b>Time-Domain Astrophysics</b>: Designed a range of routines for decoding photometry and spectroscopy observations. Identified fine line and continuum structure from large data sets."
+        - "<b>PypeIt Data Reduction</b>:} Reduce raw GNIRS near-infrared exposures with data-reduction pipeline PypeIt."
 
 - title: Selected Talks and Presentations
   type: time_table
@@ -92,16 +92,17 @@
 - title: Publications
   type: nested_list
   contents:
-    - title: "CSS1603+19: a low mass polar at the cataclysmic variable period minimum"
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5210-8035&sort=date+desc">ADS Link</a>
 
-- title: Other Interests
-  type: list
+
+- title: Skills
+  type: map
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - name: Programming 
+      value: Python, SQL, C, C++, Java, Matlab, R, HTML, Julia, PHP
+    - name: Machining
+      value: Tormach CNC Mill, Monarch Lathes, Bridgeport Mill
+    - name: Language
+      value: English, Mandarin-Chinese
+    - name: Other
+      value: LaTeX, JupyterLab, SolidWorks, Mathematica, Rowing, Alpine Ski

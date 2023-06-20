@@ -52,12 +52,17 @@
       institution: "Mentors: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla"
       year: 2019 - 2023
       description:
-        - Description 1.
-        - Description 2.
+        - "Component Separation Algorithm: Implemented the needlet internal linear combination (NILC) for foreground component separation. Tested the algorithm under different foreground conditions. Used pixel covariance to reduce the NILC bias at large angular scale."
+        - "Polarized Foreground Masks: Constructed masks based on polarized intensity with WMAP and Planck maps specific to the CLASS scanning region. Tested power spectrum estimators' performances over different polarization masks."
+        - "Instrumentation: Assisted in designing telescope components with SolidWorks. Assembled CLASS cryogenic receivers. Used Tormach CNC to produce infrared filters for the CLASS detector assembly."
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Zakamska Stellar Astrophysics Group
+      institution: "Mentor: Nadia L. Zakamska"
+      year: 2021 - 2023
+      description:
+        - "Cataclysmic Variable: First-authored paper on the puzzling cataclysmic variable CSS1603+19. Performed various analysis over infrared and optical observations. Demystified unusual emission structure from the system. Concluded with a physical model for this system including the stellar mass and radius of the system."
+        - "Time-Domain Astrophysics: Designed a range of routines for decoding photometry and spectroscopy observations. Identified fine line and continuum structure from large data sets."
+        - "PypeIt Data Reduction:} Reduce raw GNIRS near-infrared exposures with data-reduction pipeline PypeIt."
 
     - title: Professor of Theoretical Physics
       institution: Karl-Ferdinand University, Prague, Czechoslovakia

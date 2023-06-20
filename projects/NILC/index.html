@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Needlet ILC | Yiqi "Andrew" Liu</title>
     <meta name="author" content="Yiqi " andrew liu>
-    <meta name="description" content="needlet internal linear combination algorithm">
+    <meta name="description" content="The needlet internal linear combination algorithm">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -38,7 +38,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://liuyiqiandrew.github.io/projects/1_project/">
+    <link rel="canonical" href="https://liuyiqiandrew.github.io/projects/NILC/">
 
     <!-- Dark Mode -->
     
@@ -117,7 +117,7 @@
 
           <header class="post-header">
             <h1 class="post-title">Needlet ILC</h1>
-            <p class="post-description">needlet internal linear combination algorithm</p>
+            <p class="post-description">The needlet internal linear combination algorithm</p>
           </header>
 
           <article>
@@ -135,19 +135,23 @@
 
 </div>
 
-<p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+<p>This project is my implementation of the NILC algorithm. The algorithm performance is particularly good for temperature
+anisotropy. However, this instance struggles with dealing with noise associated with WMAP instrument.</p>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+<p>Note this post and repo is still a work in progress.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<!-- Every project has a beautiful feature showcase page.
+It's easy to include images in a flexible 3-column grid format.
+Make your photos 1/3, 2/3, or full width.
+
+To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+
+    ---
+    layout: page
+    title: project
+    description: a project with a background image
+    img: /assets/img/12.jpg
+    ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -155,23 +159,50 @@ img: /assets/img/12.jpg
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/1-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/1-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/1-1400.webp"></source>
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 480px)" 
+        srcset="/assets/img/1-480.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 800px)" 
+        srcset="/assets/img/1-800.webp"
+      />
+    <source 
+        class="responsive-img-srcset"
+        media="(max-width: 1400px)" 
+        srcset="/assets/img/1-1400.webp"
+      />
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img 
+  src="/assets/img/1.jpg"
+  class="img-fluid rounded z-depth-1"  
+  width="auto" 
+  height="auto" 
+   
+   
+   
+   
+   
+  title="example image" 
+  
+  onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+/&gt;
+</code></pre></div></div>
 
-  </picture>
+<p>&lt;/picture&gt;</p>
 
-</figure>
+<p>&lt;/figure&gt;</p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+&lt;div class="col-sm mt-3 mt-md-0"&gt;
+    &lt;figure&gt;
+</code></pre></div></div>
 
-  <picture>
+<picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/3-480.webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/3-800.webp"></source>
@@ -183,13 +214,14 @@ img: /assets/img/12.jpg
 
   </picture>
 
-</figure>
+<p>&lt;/figure&gt;</p>
 
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+&lt;div class="col-sm mt-3 mt-md-0"&gt;
+    &lt;figure&gt;
+</code></pre></div></div>
 
-  <picture>
+<picture>
     
     <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/5-480.webp"></source>
     <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/5-800.webp"></source>
@@ -201,10 +233,11 @@ img: /assets/img/12.jpg
 
   </picture>
 
-</figure>
+<p>&lt;/figure&gt;</p>
 
-    </div>
-</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;/div&gt;
+</code></pre></div></div>
+<p>&lt;/div&gt;</p>
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
@@ -292,7 +325,7 @@ Here’s the code for the last row of images above:</p>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
-
+<p>–&gt;</p>
 
           </article>
 

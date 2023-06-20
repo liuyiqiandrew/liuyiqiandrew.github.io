@@ -17,14 +17,14 @@
       institution: Princeton University, Princeton, New Jersey, United States
       year: 2023 - present
       description:
-        - Research: Cosmic Microwave Background
+        - Research":" Cosmic Microwave Background
     - title: B.S. in Applied Math & Statistics, Physics, Mathematics
       institution: Johns Hopkins University, Baltimore, Maryland, United States
       year: 2019 - 2023
       description:
-        - GPA: 3.99 / 4.0
-        - Departmental Honors: Applied Math & Stats, Physics, Math
-        - Minor: Computer Science
+        - GPA":" 3.99 / 4.0
+        - Departmental Honors":" Applied Math & Stats, Physics, Math
+        - Minor":" Computer Science
 
 - title: Honors and Awards
   type: time_table
@@ -37,30 +37,25 @@
       items: 
         - Provost's Undergraduate Research Award
         - Sigma Pi Sigma Physics Honors Society
-    - year: 2021
-      items:
-        - Bloomberg Distinguished Professor Research Fellowship
-    - year: 2020
+    - year: 2020 - 2021
       items:
         - Bloomberg Distinguished Professor Research Fellowship
     - year: 2019 - 2022
       items:
-        - Dean's List
+        - Dean's List 
 
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Cosmology Large Angular Scale Surveyor
+      institution: Mentors: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla
+      year: 2019 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Component Separation Algorithm":" Implemented the needlet internal linear combination (NILC) for foreground component separation. Tested the algorithm under different foreground conditions. Used pixel covariance to reduce the NILC bias at large angular scale.
+        - Polarized Foreground Masks":" Constructed masks based on polarized intensity with WMAP and Planck maps specific to the CLASS scanning region. Tested power spectrum estimators' performances over different polarization masks.
+        - Instrumentation":" Assisted in designing telescope components with SolidWorks. Assembled CLASS cryogenic receivers. Used Tormach CNC to produce infrared filters for the CLASS detector assembly.
+    
     - title: Visiting Professor
       institution: California Institute of Technology, Pasadena, California, US
       year: 1933

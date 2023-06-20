@@ -4,3 +4,7 @@
 
 "PhysRev":
   url: https://journals.aps.org/
+
+"MNRAS":
+  url: https://academic.oup.com/mnras
+  color: "#937cb9"

@@ -19,9 +19,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-My name is Yiqi Liu (刘逸奇). I usually go by Andrew. I am currently a physics graduate student at Princeton University. My research focus is cosmology. I study the origin of the universe via the cosmic microwave background (CMB).
+My name is Yiqi Liu (刘逸奇). I usually go by Andrew. I am currently a physics graduate student at Princeton University. My research focus is cosmology. I study the origin of the universe via the cosmic microwave background (CMB). My advisor is [Jo Dunkley](https://www.jodunkley.com/).
 
-Before coming to Princeton, I finished my undergraduate degree at Johns Hopkins University majoring in applied math, physics, and pure math.
+Before coming to Princeton, I finished my undergraduate degree at Johns Hopkins University triple-majoring in applied math, physics, and pure math.
 
 At Hopkins, I worked with Prof. [Tobias Marriage](https://physics-astronomy.jhu.edu/directory/tobias-marriage/) and Prof. [Charles Bennett](https://physics-astronomy.jhu.edu/directory/charles-l-bennett/) on the [Cosmology Large Angular Scale Surveyor (CLASS)](https://sites.krieger.jhu.edu/class/) project. In addition, I worked with Prof. [Nadia Zakamska](http://zakamska.johnshopkins.edu/) researching a bizzare cataclysmic variable system.
 

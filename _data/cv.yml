@@ -6,7 +6,7 @@
     - name: Location
       value: Princeton, NJ, United States
     - name: Email
-      value: yl9946@princeton.edu
+      value: andrew.liu@princeton.edu
     - name: Telephone
       value: (667) 218-8691
 
@@ -52,6 +52,13 @@
 - title: Research Experience
   type: time_table
   contents:   
+    - title: Simons Observatory
+      institution: "Mentors: Jo Dunkley, Susanna Azzoni"
+      year: 2023 - present
+      description: 
+        - "<b>Cross C_ell Foreground Cleaning</b>: Investigating the potential impact of dust complexity on the bias of tensor-to-scalar ratio."
+        - "<b>SO-Planck cross analysis</b>: estimating calibration factors to SO maps using Planck data."
+
     - title: Cosmology Large Angular Scale Surveyor
       institution: "Mentors: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla"
       year: 2019 - 2023

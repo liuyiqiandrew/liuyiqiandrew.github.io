@@ -1763,7 +1763,9 @@ html[data-theme=dark] .navbar {
 }
 
 .publications .year {
-  margin: 1rem 0 0.15rem;
+  margin: 1.5rem 0 0.65rem;
+  padding-top: 0.7rem;
+  border-top: 2px solid var(--museum-ink);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.18em;

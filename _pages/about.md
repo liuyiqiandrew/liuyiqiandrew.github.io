@@ -10,13 +10,6 @@ focus_areas:
   - Bayesian Inference
   - Simons Observatory
   - Large-scale Data Analysis
-home_links:
-  - label: CV
-    url: /cv/
-    style: solid
-  - label: Publications
-    url: /publications/
-    style: outline
 
 profile:
   align: right
@@ -26,7 +19,7 @@ profile:
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
 
 I am Yiqi Liu (刘逸奇), and I usually go by Andrew. I am a physics Ph.D. student at Princeton University advised by Jo Dunkley. My research focuses on the cosmic microwave background, especially foreground complexity, component separation, and statistical inference for primordial B-mode searches.

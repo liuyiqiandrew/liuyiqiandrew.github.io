@@ -8,3 +8,7 @@
 "MNRAS":
   url: https://academic.oup.com/mnras
   color: "#937cb9"
+
+"JCAP":
+  url: https://iopscience.iop.org/journal/1475-7516
+  color: "#8f1f1f"

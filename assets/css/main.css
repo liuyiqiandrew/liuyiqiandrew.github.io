@@ -1170,6 +1170,8 @@ h3 {
 .desc {
   max-width: 52rem;
   color: var(--global-text-color-light);
+  font-size: 1.18rem;
+  line-height: 1.38;
 }
 
 .page-kicker {
@@ -1183,6 +1185,7 @@ h3 {
 
 .museum-panel {
   border: 0;
+  border-top: 2px solid var(--museum-ink);
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -1390,8 +1393,9 @@ html[data-theme=dark] .navbar {
 
 .home-subtitle {
   margin-bottom: 1.1rem;
-  font-size: 1.28rem;
-  line-height: 1.35;
+  font-size: 1.5rem;
+  line-height: 1.28;
+  text-transform: capitalize;
 }
 
 .home-actions {
@@ -1509,7 +1513,7 @@ html[data-theme=dark] .navbar {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: -0.03em;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 .panel-heading a,
@@ -1984,7 +1988,7 @@ footer.sticky-bottom {
     font-size: clamp(2.4rem, 13vw, 4.1rem);
   }
   .home-subtitle {
-    font-size: 1.16rem;
+    font-size: 1.28rem;
   }
   .home-copy,
   .profile-card__body,

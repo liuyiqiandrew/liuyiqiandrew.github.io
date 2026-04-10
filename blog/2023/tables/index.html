@@ -93,10 +93,6 @@
               <div class="header-actions">
                 <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v2.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
                 <a class="museum-button museum-button--solid museum-button--small" href="mailto:%61%6E%64%72%65%77.%6C%69%75@%70%72%69%6E%63%65%74%6F%6E.%65%64%75">Email</a>
-                <button id="light-toggle" class="museum-icon-button" title="Change theme" aria-label="Toggle theme">
-                  <i class="fas fa-moon"></i>
-                  <i class="fas fa-sun"></i>
-                </button>
               </div>
             </div>
           </div>
@@ -274,7 +270,7 @@
 
 <div id="giscus_thread" style="max-width: 1180px; margin: 0 auto;">
   <script>
-    let giscusTheme = localStorage.getItem("theme");
+    let giscusTheme = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
     let giscusAttributes = {
         "src": "https://giscus.app/client.js",
         "data-repo": "alshedivat/al-folio",

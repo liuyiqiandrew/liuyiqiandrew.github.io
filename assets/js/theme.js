@@ -1,12 +1,6 @@
 // Has to be in the head tag, otherwise a flicker effect will occur.
 
-let toggleTheme = (theme) => {
-  if (theme == "dark") {
-    setTheme("light");
-  } else {
-    setTheme("dark");
-  }
-};
+const systemThemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
 let setTheme = (theme) => {
   transTheme();
@@ -28,7 +22,6 @@ let setTheme = (theme) => {
   } else {
     document.documentElement.removeAttribute("data-theme");
   }
-  localStorage.setItem("theme", theme);
 
   // Updates the background of medium-zoom overlay.
   if (typeof medium_zoom !== "undefined") {
@@ -72,15 +65,25 @@ let transTheme = () => {
   }, 500);
 };
 
-let initTheme = (theme) => {
-  if (theme == null || theme == "null") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      theme = "dark";
-    }
+let initTheme = () => {
+  try {
+    localStorage.removeItem("theme");
+  } catch (error) {
+    // Ignore localStorage access issues and fall back to system theme.
   }
 
+  const theme = systemThemeQuery.matches ? "dark" : "light";
   setTheme(theme);
 };
 
-initTheme(localStorage.getItem("theme"));
+if (typeof systemThemeQuery.addEventListener === "function") {
+  systemThemeQuery.addEventListener("change", (event) => {
+    setTheme(event.matches ? "dark" : "light");
+  });
+} else if (typeof systemThemeQuery.addListener === "function") {
+  systemThemeQuery.addListener((event) => {
+    setTheme(event.matches ? "dark" : "light");
+  });
+}
+
+initTheme();

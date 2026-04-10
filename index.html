@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Yiqi "Andrew" Liu</title>
     <meta name="author" content="Yiqi " andrew liu>
-    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+    <meta name="description" content="Cosmology, CMB analysis, and foreground modeling at Princeton University.
 ">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
@@ -27,7 +27,9 @@
     <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="" id="highlight_theme_light">
@@ -52,27 +54,19 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="site-body fixed-top-nav sticky-bottom-footer">
 
-    <!-- Header -->
-    <header>
+    <!-- Header -->    <header class="site-header">
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
-        <div class="container">
-          <!-- Social Icons -->
-          <div class="navbar-brand social">
-            <a href="mailto:%79%6C%39%39%34%36@%70%72%69%6E%63%65%74%6F%6E.%65%64%75" title="email"><i class="fas fa-envelope"></i></a>
-            <a href="https://orcid.org/0000-0002-5210-8035" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
-            <a href="https://scholar.google.com/citations?user=liuyiqiandrew" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
-            <a href="https://github.com/liuyiqiandrew" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/yiqi-liu-andrew" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
-            
+      <nav id="navbar" class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container header-shell">
+          <a class="navbar-brand site-mark" href="/">
+            <span class="site-mark__name"><span>Yiqi </span><span>"Andrew" </span><span>Liu</span></span>
+            <span class="site-mark__meta">Cosmology, CMB analysis, and foreground modeling at Princeton University.
+</span>
+          </a>
 
-          </div>
-          
-          <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
@@ -81,62 +75,108 @@
           </button>
 
           <div class="collapse navbar-collapse text-right" id="navbarNav">
-            <ul class="navbar-nav ml-auto flex-nowrap">
+            <div class="header-shell__menu">
+              <ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+                  <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
+                </li>
 
-              <!-- About -->
-              <li class="nav-item active">
-                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
-              </li>
-              
+                
+                <li class="nav-item ">
+                  <a class="nav-link" href="/cv/">CV</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/publications/">publications</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="/projects/">projects</a>
+                </li>
+</ul>
 
-              <!-- Other pages -->
-              <li class="nav-item ">
-                <a class="nav-link" href="/cv/">CV</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/projects/">projects</a>
-              </li>
-
-              <!-- Toogle theme mode -->
-              <li class="toggle-container">
-                <button id="light-toggle" title="Change theme">
+              <div class="header-actions">
+                <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v2.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                <a class="museum-button museum-button--solid museum-button--small" href="mailto:%61%6E%64%72%65%77.%6C%69%75@%70%72%69%6E%63%65%74%6F%6E.%65%64%75">Email</a>
+                <button id="light-toggle" class="museum-icon-button" title="Change theme" aria-label="Toggle theme">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
                 </button>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
-
-      <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
-        <div class="progress-container">
-          <span class="progress-bar"></span>
-        </div>
-      </progress>
     </header>
 
 
     <!-- Content -->
-    <div class="container mt-5">
-      
-        <!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           <span class="font-weight-bold">Yiqi</span> "Andrew" Liu
-          </h1>
-          <p class="desc"><a href="phy.princeton.edu">Department of Physics</a>, Princeton University</p>
-        </header>
+    <main class="site-main">
+      <div class="container site-content">
+        
+          <!-- about.html -->
+      <div class="post museum-page museum-home">
+        <section class="home-hero">
+          <div class="home-copy museum-panel museum-panel--hero">
+            
+            <p class="page-kicker">Cosmology, CMB analysis, and statistical inference</p>
+            
+            <h1 class="post-title">
+             <span>Yiqi</span> "Andrew" Liu
+            </h1>
+            <p class="desc home-subtitle"><a href="https://phy.princeton.edu" rel="external nofollow noopener" target="_blank">Department of Physics</a>, Princeton University</p>
 
-        <article>
-          <div class="profile float-right">
+            
+            <div class="home-actions">
+              
+              <a class="museum-button museum-button--solid" href="/cv/">View CV</a>
+              
+              <a class="museum-button museum-button--outline" href="/publications/">Publications</a>
+              
+              <a class="museum-button museum-button--subtle" href="mailto:andrew.liu@princeton.edu">Contact</a>
+              
+            </div>
+            
 
-              <figure>
+            
+            <ul class="home-focus">
+              
+              <li>Cosmic Microwave Background</li>
+              
+              <li>Foreground Complexity</li>
+              
+              <li>Component Separation</li>
+              
+              <li>Bayesian Inference</li>
+              
+              <li>Simons Observatory</li>
+              
+              <li>Large-scale Data Analysis</li>
+              
+            </ul>
+            
+
+            <div class="home-copy-block clearfix">
+              <p>I am Yiqi Liu (刘逸奇), and I usually go by Andrew. I am a physics Ph.D. student at Princeton University working with <a href="https://www.jodunkley.com/" rel="external nofollow noopener" target="_blank">Jo Dunkley</a>. My research sits at the intersection of cosmology, statistical inference, and large-scale scientific computing, with a focus on extracting weak signals from the cosmic microwave background.</p>
+
+<p>Within the Simons Observatory, I work on foreground modeling and component separation for primordial B-mode searches. Recent projects include regression-based component separation, dust-complexity studies, and SO x Planck cross-correlation pipelines. My recent <a href="https://doi.org/10.1088/1475-7516/2025/11/024" rel="external nofollow noopener" target="_blank">JCAP paper</a> studies how dust complexity can bias recovery of the tensor-to-scalar ratio.</p>
+
+<p>Before Princeton, I completed a B.S. in applied mathematics and statistics, physics, and mathematics at Johns Hopkins University, with a minor in computer science. There I worked with <a href="https://physics-astronomy.jhu.edu/directory/tobias-marriage/" rel="external nofollow noopener" target="_blank">Tobias Marriage</a> and <a href="https://physics-astronomy.jhu.edu/directory/charles-l-bennett/" rel="external nofollow noopener" target="_blank">Charles Bennett</a> on the <a href="https://sites.krieger.jhu.edu/class/" rel="external nofollow noopener" target="_blank">CLASS experiment</a>, and with <a href="http://zakamska.johnshopkins.edu/" rel="external nofollow noopener" target="_blank">Nadia Zakamska</a> on time-domain stellar astrophysics, leading to a first-author <a href="https://doi.org/10.1093/mnras/stad1156" rel="external nofollow noopener" target="_blank">MNRAS paper</a> on CSS1603+19.</p>
+
+<p>I enjoy building tools that connect careful modeling with physically interpretable results. Outside research, I like rowing and alpine skiing.</p>
+
+<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+
+Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+
+Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
+
+            </div>
+          </div>
+
+          <aside class="home-rail">
+            <div class="profile-card museum-panel">
+              
+                <div class="profile-card__media">
+                  <figure>
 
   <picture>
     
@@ -151,98 +191,124 @@
   </picture>
 
 </figure>
-
-            <div class="address">
-              <p>Jadwin Hall</p> <p>Washington Road</p> <p>Princeton, NJ 08544</p>
-
-            </div>
-          </div>
-
-          <div class="clearfix">
-            <p>My name is Yiqi Liu (刘逸奇). I usually go by Andrew. I am currently a physics graduate student at Princeton University. My research focus is cosmology. I study the origin of the universe via the cosmic microwave background (CMB). My advisor is <a href="https://www.jodunkley.com/" rel="external nofollow noopener" target="_blank">Jo Dunkley</a>.</p>
-
-<p>Before coming to Princeton, I finished my undergraduate degree at Johns Hopkins University triple-majoring in applied math, physics, and pure math.</p>
-
-<p>At Hopkins, I worked with Prof. <a href="https://physics-astronomy.jhu.edu/directory/tobias-marriage/" rel="external nofollow noopener" target="_blank">Tobias Marriage</a> and Prof. <a href="https://physics-astronomy.jhu.edu/directory/charles-l-bennett/" rel="external nofollow noopener" target="_blank">Charles Bennett</a> on the <a href="https://sites.krieger.jhu.edu/class/" rel="external nofollow noopener" target="_blank">Cosmology Large Angular Scale Surveyor (CLASS)</a> project. In addition, I worked with Prof. <a href="http://zakamska.johnshopkins.edu/" rel="external nofollow noopener" target="_blank">Nadia Zakamska</a> researching a bizzare cataclysmic variable system.</p>
-
-<p>I like to row and ski during my free time.</p>
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
-
-          </div>
-
-          <!-- News -->
-          <h2><a href="/news/" style="color: inherit;">news</a></h2>          <div class="news">
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
+</div>
               
-                <tr>
-                  <th scope="row">Sep 1, 2023</th>
-                  <td>
-                    Started PhD study at Princeton Physics
 
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">May 25, 2023</th>
-                  <td>
-                    Graduated from Hopkins! <img class="emoji" title=":mortar_board:" alt=":mortar_board:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png" height="20" width="20">
+              <div class="profile-card__body">
+                
+                <p class="profile-card__role">Ph.D. Student in Physics, Princeton University</p>
+                
+                <div class="address profile-card__address">
+                  <p>Jadwin Hall</p> <p>Washington Road</p> <p>Princeton, NJ 08544</p>
 
-                  </td>
-                </tr>
-              </table>
+                </div>
+                <div class="profile-card__links">
+                  <a class="museum-button museum-button--outline museum-button--small" href="mailto:%61%6E%64%72%65%77.%6C%69%75@%70%72%69%6E%63%65%74%6F%6E.%65%64%75">Email</a>
+                  <a class="museum-button museum-button--outline museum-button--small" href="/cv/">CV</a>
+                  
+                  <a class="museum-button museum-button--subtle museum-button--small" href="https://www.linkedin.com/in/yiqi-liu-andrew" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  
+                </div>
+              </div>
+            </div>
+
+            
+            <section class="museum-panel home-highlights">
+              <div class="panel-heading">
+                <h2>Highlights</h2>
+              </div>
+              <dl class="home-highlights__list">
+                
+                <div class="home-highlights__item">
+                  <dt>Current focus</dt>
+                  <dd>Foreground modeling and component separation for primordial B-mode science</dd>
+                </div>
+                
+                <div class="home-highlights__item">
+                  <dt>Recent paper</dt>
+                  <dd>JCAP 2025 on dust complexity and recovery of primordial B-modes</dd>
+                </div>
+                
+                <div class="home-highlights__item">
+                  <dt>Core methods</dt>
+                  <dd>MCMC, harmonic-space analysis, cross-correlations, and scientific computing</dd>
+                </div>
+                
+              </dl>
+            </section>
+            
+          </aside>
+        </section>
+
+        <div class="home-modules">
+          <section class="museum-panel home-module">
+            <div class="panel-heading">
+              <h2><a href="/news/">News</a></h2>
+              <a class="panel-link" href="/news/">Archive</a>
+            </div>          <div class="news">
+            
+            <div class="news-feed">
+              
+              <article class="news-item">
+                <p class="news-item__date">Sep 1, 2023</p>
+                <div class="news-item__content">
+                  Started PhD study at Princeton Physics
+
+                </div>
+              </article>
+              <article class="news-item">
+                <p class="news-item__date">May 25, 2023</p>
+                <div class="news-item__content">
+                  Graduated from Hopkins! <img class="emoji" title=":mortar_board:" alt=":mortar_board:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f393.png" height="20" width="20">
+
+                </div>
+              </article>
             </div>
           </div>
 
-          <!-- Latest posts -->
+          </section>
+
+          <section class="museum-panel home-module">
+            <div class="panel-heading">
+              <h2><a href="/publications/">Selected Publications</a></h2>
+              <a class="panel-link" href="/publications/">All publications</a>
+            </div>
+          <div class="publications">
+            <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+      <article class="publication-entry">
+        <div class="publication-entry__label abbr"><abbr class="badge" style="background-color:#937cb9"><a href="https://academic.oup.com/mnras" rel="external nofollow noopener" target="_blank">MNRAS</a></abbr></div>
+
+        <div id="2023MNRAS.522.2719L" class="publication-entry__body">
+          <div class="title">CSS1603+19: a low-mass polar near the cataclysmic variable period minimum</div>
+          <div class="author">
           
 
-          <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
-          <div class="publications">
-            <ol class="bibliography"><li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"><abbr class="badge" style="background-color:#937cb9"><a href="https://academic.oup.com/mnras" rel="external nofollow noopener" target="_blank">MNRAS</a></abbr></div>
-
-        <!-- Entry bib key -->
-        <div id="2023MNRAS.522.2719L" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">CSS1603+19: a low-mass polar near the cataclysmic variable period minimum</div>
-        <!-- Author -->
-        <div class="author">
-        
-
-        Yiqi Liu, Hsiang-Chih Hwang, Nadia L. Zakamska, and
-          <span class="more-authors" title="click to view 1 more author" onclick="
-                var element = $(this);
-                element.attr('title', '');
-                var more_authors_text = element.text() == '1 more author' ? 'John R. Thorstensen' : '1 more author';
-                var cursorPosition = 0;
-                var textAdder = setInterval(function(){
-                  element.text(more_authors_text.substring(0, cursorPosition + 1));
-                  if (++cursorPosition == more_authors_text.length){
-                    clearInterval(textAdder);
-                  }
-              }, '10');
-              ">1 more author</span>
+          Yiqi Liu, Hsiang-Chih Hwang, Nadia L. Zakamska, and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'John R. Thorstensen' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                }, '10');
+                ">1 more author</span>
 </div>
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>MNRAS</em>, Jun 2023
-        </div>
-        <div class="periodical">
           
-        </div>
+          
+          <div class="periodical">
+            <em>MNRAS</em>, Jun 2023
+          </div>
+          <div class="periodical">
+            
+          </div>
 
-          <!-- Links/Buttons -->
           <div class="links">
             <a href="http://arxiv.org/abs/2211.14945" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
             <a href="https://doi.org/10.1093/mnras/stad1156" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
@@ -256,15 +322,67 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
           
         </div>
-      </div>
-</li></ol>
+      </article>
+</li>
+<li>
+<!-- _layouts/bib.html -->
+      <article class="publication-entry">
+        <div class="publication-entry__label abbr"><abbr class="badge">JCAP</abbr></div>
+
+        <div id="2025JCAP...11..024L" class="publication-entry__body">
+          <div class="title">The Simons Observatory: assessing the impact of dust complexity on the recovery of primordial B-modes</div>
+          <div class="author">
+          
+
+          Yiqi Liu, Susanna Azzoni, Thejs Brinckmann, and
+            <span class="more-authors" title="click to view 14 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '14 more authors' ? 'Jo Dunkley, J. Colin Hill, T. Jivraj, Mathew S. Madhavacheril, Fiona McCarthy, P. Daniel Meerburg, Toshiya Namikawa, Enzo Pascale, Marco Raveri, Mathieu Remazeilles, Craig Savage, Marcel Schmittfull, Benjamin Westbrook, Laura Wolz' : '14 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                }, '10');
+                ">14 more authors</span>
+</div>
+
+          
+          
+          <div class="periodical">
+            <em>JCAP</em>, Nov 2025
+          </div>
+          <div class="periodical">
+            Published in JCAP
           </div>
 
+          <div class="links">
+            <a href="https://doi.org/10.1088/1475-7516/2025/11/024" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+          </div>
+          
+          <div class="badges">
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-doi="10.1088/1475-7516/2025/11/024"></span>
+              <span class="__dimensions_badge_embed__" data-doi="10.1088/1475-7516/2025/11/024" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
+          </div>
 
-          <!-- Social -->
-            <div class="social">
-              <div class="contact-icons">
-                <a href="mailto:%79%6C%39%39%34%36@%70%72%69%6E%63%65%74%6F%6E.%65%64%75" title="email"><i class="fas fa-envelope"></i></a>
+          
+        </div>
+      </article>
+</li>
+</ol>
+          </div>
+
+          </section>
+        </div>
+        <section class="museum-panel home-social">
+          <div class="panel-heading">
+            <h2>Connect</h2>
+          </div>
+          <div class="social">
+            <div class="contact-icons">
+              <a href="mailto:%61%6E%64%72%65%77.%6C%69%75@%70%72%69%6E%63%65%74%6F%6E.%65%64%75" title="email"><i class="fas fa-envelope"></i></a>
             <a href="https://orcid.org/0000-0002-5210-8035" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
             <a href="https://scholar.google.com/citations?user=liuyiqiandrew" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
             <a href="https://github.com/liuyiqiandrew" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
@@ -272,27 +390,33 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
             <a href="/feed.xml" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
             
 
-              </div>
-
-              <div class="contact-note">
-                
-              </div>
-
             </div>
-        </article>
+            <div class="contact-note">
+              
+            </div>
+          </div>
+        </section>
+      </div>
 
-</div>
+        
+      </div>
+    </main>
 
-      
-    </div>
-
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
-        © Copyright 2024 Yiqi "Andrew" Liu. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
-
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container site-footer__inner">
+        <div class="site-footer__lead">
+          <p class="site-footer__title">Yiqi "Andrew" Liu</p>
+          <p class="site-footer__note">Cosmology, CMB analysis, and foreground modeling at Princeton University.
+</p>
+        </div>
+        <div class="site-footer__meta">
+          <p>© 2026 Yiqi "Andrew" Liu</p>
+          <p>Built with <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> and deployed on <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
+</p>
+        </div>
       </div>
     </footer>
+
 
     <!-- JavaScripts -->
     <!-- jQuery -->
@@ -336,83 +460,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
     
     
-
-<!-- Scrolling Progress Bar -->
-<script type="text/javascript">
-  /*
-   * This JavaScript code has been adapted from the article 
-   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
-   * published on the website https://css-tricks.com on the 7th of May, 2014.
-   * Couple of changes were made to the original code to make it compatible 
-   * with the `al-foio` theme.
-   */
-  const progressBar = $("#progress");
-  /*
-   * We set up the bar after all elements are done loading.
-   * In some cases, if the images in the page are larger than the intended
-   * size they'll have on the page, they'll be resized via CSS to accomodate
-   * the desired size. This mistake, however, breaks the computations as the
-   * scroll size is computed as soon as the elements finish loading.
-   * To account for this, a minimal delay was introduced before computing the
-   * values.
-   */
-  window.onload = function () {
-    setTimeout(progressBarSetup, 50);
-  };
-  /*
-   * We set up the bar according to the browser.
-   * If the browser supports the progress element we use that.
-   * Otherwise, we resize the bar thru CSS styling
-   */
-  function progressBarSetup() {
-    if ("max" in document.createElement("progress")) {
-      initializeProgressElement();
-      $(document).on("scroll", function() {
-        progressBar.attr({ value: getCurrentScrollPosition() });
-      });
-      $(window).on("resize", initializeProgressElement);
-    } else {
-      resizeProgressBar();
-      $(document).on("scroll", resizeProgressBar);
-      $(window).on("resize", resizeProgressBar);
-    }
-  }
-  /*
-   * The vertical scroll position is the same as the number of pixels that
-   * are hidden from view above the scrollable area. Thus, a value > 0 is
-   * how much the user has scrolled from the top
-   */
-  function getCurrentScrollPosition() {
-    return $(window).scrollTop();
-  }
-
-  function initializeProgressElement() {
-    let navbarHeight = $("#navbar").outerHeight(true);
-    $("body").css({ "padding-top": navbarHeight });
-    $("progress-container").css({ "padding-top": navbarHeight });
-    progressBar.css({ top: navbarHeight });
-    progressBar.attr({
-      max: getDistanceToScroll(),
-      value: getCurrentScrollPosition(),
-    });
-  }
-  /*
-   * The offset between the html document height and the browser viewport
-   * height will be greater than zero if vertical scroll is possible.
-   * This is the distance the user can scroll
-   */
-  function getDistanceToScroll() {
-    return $(document).height() - $(window).height();
-  }
-
-  function resizeProgressBar() {
-    progressBar.css({ width: getWidthPercentage() + "%" });
-  }
-  // The scroll ratio equals the percentage to resize the bar
-  function getWidthPercentage() {
-    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
-  }
-</script>
 
   </body>
 </html>

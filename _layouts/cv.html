@@ -2,18 +2,32 @@
 layout: default
 ---
 <!-- _layouts/cv.html -->
-        <div class="post">
+        <div class="post museum-page cv-shell">
 
           <header class="post-header">
-            <h1 class="post-title">{{ page.header }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
-            <p class="post-description">{{ page.description }}</p>
+            {% if page.kicker %}
+            <p class="page-kicker">{{ page.kicker }}</p>
+            {% endif %}
+            <div class="cv-header">
+              <div>
+                <h1 class="post-title">{{ page.header }}</h1>
+                {% if page.description %}
+                <p class="post-description">{{ page.description }}</p>
+                {% endif %}
+              </div>
+              {% if page.cv_pdf %}
+              <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="museum-button museum-button--solid">Download PDF</a>
+              {% endif %}
+            </div>
           </header>
 
           <article>
             <div class="cv">
               {% for entry in site.data.cv %}
-                <div class="card mt-3 p-3">
-                  <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+                <section class="cv-section museum-panel">
+                  <div class="cv-section__header">
+                    <h2 class="cv-section__title">{{ entry.title }}</h2>
+                  </div>
                   <div>
                   {% if entry.type == "list" %}
                     {% include cv/list.html %}
@@ -27,7 +41,7 @@ layout: default
                     {{ entry.contents }}
                   {% endif %}
                   </div>
-                </div>
+                </section>
               {% endfor %}
               </div>
           </article>

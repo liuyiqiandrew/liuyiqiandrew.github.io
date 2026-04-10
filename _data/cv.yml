@@ -9,117 +9,134 @@
       value: andrew.liu@princeton.edu
     - name: Telephone
       value: (667) 218-8691
+    - name: LinkedIn
+      value: <a href="https://www.linkedin.com/in/yiqi-liu-andrew">yiqi-liu-andrew</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD in Physics
+    - title: Ph.D. in Physics
       institution: Princeton University, Princeton, New Jersey, United States
-      year: 2023 - present
+      year: Expected Jun 2029
       description:
-        - "<b>Research:</b> Cosmic Microwave Background"
-    - title: B.S. in Applied Math & Statistics, Physics, Mathematics
+        - "<b>Advisor:</b> Jo Dunkley"
+        - "<b>Research interests:</b> Cosmic Microwave Background, component separation, diffuse Galactic foregrounds, statistical inference, Monte Carlo simulation, large-scale data analysis, and harmonic-space analysis."
+    - title: M.A. in Physics
+      institution: Princeton University, Princeton, New Jersey, United States
+      year: Jan 2025
+    - title: B.S. in Applied Mathematics & Statistics, Physics, and Mathematics
       institution: Johns Hopkins University, Baltimore, Maryland, United States
-      year: 2019 - 2023
+      year: May 2023
       description:
-        - "<b>GPA:</b> 3.99 / 4.0"
-        - "<b>Departmental Honors:</b> Applied Math & Stats, Physics, Math"
+        - "<b>GPA:</b> 3.99 / 4.00 (General Honors and Departmental Honors in all majors)"
         - "<b>Minor:</b> Computer Science"
 
-- title: Honors and Awards
+- title: Selected Awards
   type: time_table
   contents:
     - year: 2023
-      items: 
-        - Donald E. Kerr Memorial Award 
-        - Applied Mathematics and Statistics Achievement Award
+      items:
+        - Donald E. Kerr Memorial Award, JHU top 2 graduating seniors majoring in physics
+        - Applied Math and Statistics Achievement Award, JHU top 6 graduating seniors majoring in applied math and statistics
     - year: 2022
-      items: 
-        - Provost's Undergraduate Research Award
+      items:
         - Sigma Pi Sigma Physics Honors Society
+        - Provost's Undergraduate Research Award, JHU funded research support
     - year: 2020 - 2021
       items:
-        - Bloomberg Distinguished Professor Research Fellowship
-    - year: 2019 - 2022
+        - Bloomberg Distinguished Professor Research Fellowship x2
+    - year: 2020 - 2022
       items:
-        - Dean's List 
-        
-- title: Publications
+        - Dean's List
+
+- title: Selected Publications
   type: nested_list
   contents:
-    - title: <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5210-8035&sort=date+desc">ADS Link</a>
+    - title: <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5210-8035&sort=date+desc">NASA ADS profile</a>
+      items:
+        - <a href="/publications/">Selected papers on this site</a>
 
 - title: Research Experience
   type: time_table
-  contents:   
-    - title: Simons Observatory
-      institution: "Mentors: Jo Dunkley, Susanna Azzoni"
-      year: 2023 - present
-      description: 
-        - "<b>Cross C_ell Foreground Cleaning</b>: Investigating the potential impact of dust complexity on the bias of tensor-to-scalar ratio."
-        - "<b>SO-Planck cross analysis</b>: estimating calibration factors to SO maps using Planck data."
-
-    - title: Cosmology Large Angular Scale Surveyor
-      institution: "Mentors: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla"
+  contents:
+    - title: Graduate Researcher | Simons Observatory
+      institution: "Princeton, NJ | Mentors: Jo Dunkley, Susanna Azzoni"
+      year: 2023 - Present
+      description:
+        - Developed per-scale regression-based component separation algorithms to extract weak cosmological signals from noisy high-dimensional data.
+        - Investigated non-Gaussian statistics for next-generation foreground cleaning.
+        - Demonstrated that dust complexity biases cosmological inference using MCMC and Bayesian analysis.
+        - Quantified robustness of SO pipelines under various foreground complexity scenarios.
+        - Implemented pipelines for SO x Planck cross-correlation to validate instrument performance.
+    - title: Undergraduate Researcher | Cosmology Large Angular Scale Surveyor
+      institution: "Baltimore, MD | Mentors: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla"
       year: 2019 - 2023
       description:
-        - "<b>Component Separation Algorithm</b>: Implemented the needlet internal linear combination (NILC) for foreground component separation. Tested the algorithm under different foreground conditions. Used pixel covariance to reduce the NILC bias at large angular scale."
-        - "<b>Polarized Foreground Masks</b>: Constructed masks based on polarized intensity with WMAP and Planck maps specific to the CLASS scanning region. Tested power spectrum estimators' performances over different polarization masks."
-        - "<b>Instrumentation</b>: Assisted in designing telescope components with SolidWorks. Assembled CLASS cryogenic receivers. Used Tormach CNC to produce infrared filters for the CLASS detector assembly."
-
-    - title: Zakamska Stellar Astrophysics Group
-      institution: "Mentor: Nadia L. Zakamska, Hsiang-Chih Hwang"
+        - Implemented and optimized a minimum-variance estimator (Needlet Internal Linear Combination) for multi-frequency signal decomposition.
+        - Built polarization-based foreground masks and benchmarked estimator performance across frequency bands.
+        - Developed and tested point-source identification algorithms using Fourier-space filtering techniques.
+        - Created Python routines to detect temporal anomalies via rolling-dispersion diagnostics in time-series data.
+    - title: Undergraduate Researcher | Zakamska Astrophysics Group
+      institution: "Baltimore, MD | Mentors: Nadia L. Zakamska, Hsiang-Chih Hwang"
       year: 2021 - 2023
       description:
-        - "<b>Cataclysmic Variable</b>: First-authored paper on the puzzling cataclysmic variable CSS1603+19. Performed various analysis over infrared and optical observations. Demystified unusual emission structure from the system. Concluded with a physical model for this system including the stellar mass and radius of the system."
-        - "<b>Time-Domain Astrophysics</b>: Designed a range of routines for decoding photometry and spectroscopy observations. Identified fine line and continuum structure from large data sets."
-        - "<b>PypeIt Data Reduction</b>: Reduce raw GNIRS near-infrared exposures with data-reduction pipeline PypeIt."
+        - First-authored a publication modeling complex binary star systems using spectral decomposition and time-series fitting.
+        - Automated a Python-based photometric and spectral analysis pipeline for feature extraction in both time and frequency domains.
 
 - title: Selected Talks and Presentations
   type: time_table
   contents:
-    - title: <a href="https://meetings.aps.org/Meeting/MAR23/Session/G00.83">"CMB analysis using the global-NILC method"</a>
-      year: 2023 mar
-      institution: American Physics Society 2023 March Meeting, Las Vegas, NV
-
-    - title: <a href="https://aas241-aas.ipostersessions.com/?s=60-63-95-AF-C7-2E-DA-A0-73-2F-42-89-4A-1A-D6-DC">"CSS1603+19 a low mass polar at the cataclysmic variable period minimum"</a>
-      year: 2023 jan
+    - title: "Simons Observatory: Assessing and Modeling Foreground Complexity in CMB Analyses"
+      institution: 2026 American Physics Society Global Physics Summit, Denver, CO
+      year: 2026 Mar
+    - title: "The impact of dust complexity on the recovery of r"
+      institution: Pan-Experiment Galactic Science Group, Los Angeles, CA
+      year: 2025 Oct
+    - title: "From the Impact of Dust Complexity to Beyond"
+      institution: 2025 SO Collaboration Meeting, Philadelphia, PA
+      year: 2025 Jul
+    - title: "Understanding the impact of dust complexity on the recovery of the tensor-to-scalar ratio"
+      institution: 246th Meeting of the American Astronomical Society, Anchorage, AK
+      year: 2025 Jun
+    - title: "Understanding the impact of dust complexity on bias in r"
+      institution: 2024 SO Collaboration Meeting, Chicago, IL
+      year: 2024 Jul
+    - title: "CMB analysis using the global-NILC method"
+      institution: 2023 American Physics Society March Meeting, Las Vegas, NV
+      year: 2023 Mar
+    - title: "CSS1603+19: a low mass polar at the cataclysmic variable period minimum"
       institution: 241st Meeting of the American Astronomical Society, Seattle, WA
+      year: 2023 Jan
 
 - title: Teaching
   type: time_table
   contents:
-    - year: 2023 spring
-      items: 
-        - "EN.553.430 Intro to Statistics (Undergrad, 14 students)"
-    - year: 2022 fall
-      items: 
-        - "EN.553.633 Monte Carlo Method (Graduate, 17 students)"
-        - "AS.171.103 General Physics I (Undergrad, 23 students)"
-    - year: 2020 fall
-      items:
-        - "AS.171.103 General Physics I (Undergrad, 39 students)"
-
-- title: Industrial Experience
-  type: time_table
-  contents:   
-    - title: Quantitative Researcher
-      institution: Zhejiang Longwin Investment Ltd., Hangzhou, Zhejiang, China
-      year: 2021
+    - title: Teaching Assistant, EN.553.430/630 Intro to Statistics
+      institution: Ugrad and Grad, 82 students
+      year: 2023 Spring
       description:
-        - "<b>High-Frequency Trading Backtest</b>: Backtested high-frequency trading based on Box Arbitrage. Constructed testing framework for quantitative strategies with high-performance python routines."
-        - "<b>Sentiment Investment</b>: Analyzed commodity trading strategy using market sentiment based on institutional investors' open interests."
-        - "<b>Factor Investment Strategy</b>: Helped to develop quantitative stock trading model based on analyst report and company earnings."
-
+        - Graduate-level introductory statistics course covering stochastic convergence, point estimation, hypothesis testing, and interval estimation.
+    - title: Teaching Assistant, EN.553.633 Monte Carlo Method
+      institution: Grad, 60 students
+      year: 2022 Fall
+      description:
+        - Graduate-level course covering pseudo-random number generators and classic Monte Carlo simulation algorithms such as Metropolis-Hastings.
+    - title: Teaching Assistant, AS.171.103 General Physics I
+      institution: Ugrad, 23 students over 2 semesters
+      year: 2020/2022 Fall
+      description:
+        - Undergraduate-level introductory physics on classical mechanics.
 
 - title: Skills
   type: map
   contents:
-    - name: Programming 
-      value: Python, SQL, C, C++, Java, Matlab, R, HTML, Julia, PHP
+    - name: Programming
+      value: Python, C++, C, SQL, Bash, Mathematica
+    - name: Scientific Computing
+      value: MCMC methods, Bayesian sampling, HPC (Slurm)
     - name: Machining
       value: Tormach CNC Mill, Monarch Lathes, Bridgeport Mill
-    - name: Language
-      value: English, Mandarin-Chinese
+    - name: Languages
+      value: English (fluent), Mandarin (native)
     - name: Other
-      value: LaTeX, JupyterLab, SolidWorks, Mathematica, Rowing, Alpine Ski
+      value: JupyterLab, LaTeX, Git, SolidWorks, Rowing, Alpine Skiing

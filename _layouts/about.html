@@ -3,74 +3,127 @@ layout: default
 ---
 
 <!-- about.html -->
-      <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
-          </h1>
-          <p class="desc">{{ page.subtitle }}</p>
-        </header>
+      <div class="post museum-page museum-home">
+        <section class="home-hero">
+          <div class="home-copy museum-panel museum-panel--hero">
+            {% if page.eyebrow %}
+            <p class="page-kicker">{{ page.eyebrow }}</p>
+            {% endif %}
+            <h1 class="post-title">
+             {% if site.title == "blank" -%}<span>{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+            </h1>
+            <p class="desc home-subtitle">{{ page.subtitle }}</p>
 
-        <article>
-          {% if page.profile -%}
-          <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
-            {%- if page.profile.image %}
-              {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+            {% if page.home_links %}
+            <div class="home-actions">
+              {% for link in page.home_links %}
+              <a class="museum-button museum-button--{{ link.style | default: 'outline' }}" href="{{ link.url }}">{{ link.label }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
 
-              {% if page.profile.image_circular %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
-              {% else %}
-                {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+            {% if page.focus_areas %}
+            <ul class="home-focus">
+              {% for area in page.focus_areas %}
+              <li>{{ area }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+
+            <div class="home-copy-block clearfix">
+              {{ content }}
+            </div>
+          </div>
+
+          <aside class="home-rail">
+            <div class="profile-card museum-panel">
+              {% if page.profile and page.profile.image %}
+                {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
+                {% if page.profile.image_circular %}
+                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+                {% else %}
+                  {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+                {% endif %}
+                <div class="profile-card__media">
+                  {% include figure.html
+                  path=profile_image_path
+                  class=profile_image_class
+                  alt=page.profile.image -%}
+                </div>
               {% endif %}
 
-              {% include figure.html
-              path=profile_image_path
-              class=profile_image_class
-              alt=page.profile.image -%}
-            {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
-              {{ page.profile.address }}
+              <div class="profile-card__body">
+                {% if page.home_role %}
+                <p class="profile-card__role">{{ page.home_role }}</p>
+                {% endif %}
+                {%- if page.profile.address %}
+                <div class="address profile-card__address">
+                  {{ page.profile.address }}
+                </div>
+                {%- endif %}
+                <div class="profile-card__links">
+                  <a class="museum-button museum-button--outline museum-button--small" href="mailto:{{ site.email | encode_email }}">Email</a>
+                  <a class="museum-button museum-button--outline museum-button--small" href="{{ '/cv/' | relative_url }}">CV</a>
+                  {% if site.linkedin_username %}
+                  <a class="museum-button museum-button--subtle museum-button--small" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  {% endif %}
+                </div>
+              </div>
             </div>
-            {%- endif %}
-          </div>
-          {%- endif %}
 
-          <div class="clearfix">
-            {{ content }}
-          </div>
+            {% if page.highlights %}
+            <section class="museum-panel home-highlights">
+              <div class="panel-heading">
+                <h2>Highlights</h2>
+              </div>
+              <dl class="home-highlights__list">
+                {% for item in page.highlights %}
+                <div class="home-highlights__item">
+                  <dt>{{ item.label }}</dt>
+                  <dd>{{ item.value }}</dd>
+                </div>
+                {% endfor %}
+              </dl>
+            </section>
+            {% endif %}
+          </aside>
+        </section>
 
-          <!-- News -->
+        <div class="home-modules">
           {% if page.news and site.announcements.enabled -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
-            {%- include news.html limit=true %}
-          {%- endif %}
-
-          <!-- Latest posts -->
-          {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
-            {%- include latest_posts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">selected publications</a></h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
-          <!-- Social -->
-          {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
+          <section class="museum-panel home-module">
+            <div class="panel-heading">
+              <h2><a href="{{ '/news/' | relative_url }}">News</a></h2>
+              <a class="panel-link" href="{{ '/news/' | relative_url }}">Archive</a>
             </div>
+            {%- include news.html limit=true %}
+          </section>
           {%- endif %}
-        </article>
 
-</div>
+          {% if page.selected_papers -%}
+          <section class="museum-panel home-module">
+            <div class="panel-heading">
+              <h2><a href="{{ '/publications/' | relative_url }}">Selected Publications</a></h2>
+              <a class="panel-link" href="{{ '/publications/' | relative_url }}">All publications</a>
+            </div>
+            {%- include selected_papers.html %}
+          </section>
+          {%- endif %}
+        </div>
+
+        {%- if page.social %}
+        <section class="museum-panel home-social">
+          <div class="panel-heading">
+            <h2>Connect</h2>
+          </div>
+          <div class="social">
+            <div class="contact-icons">
+              {% include social.html %}
+            </div>
+            <div class="contact-note">
+              {{ site.contact_note }}
+            </div>
+          </div>
+        </section>
+        {%- endif %}
+      </div>

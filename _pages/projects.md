@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 kicker: Methods and Tools
 description: "Selected analyses, pipelines, and side projects."

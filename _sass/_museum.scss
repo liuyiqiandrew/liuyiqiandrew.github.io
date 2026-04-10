@@ -406,7 +406,6 @@ html[data-theme='dark'] .navbar {
 
 .profile-card__body,
 .home-highlights,
-.home-social,
 .page-article,
 .cv-section {
   padding: 1.2rem 0 0;
@@ -496,37 +495,6 @@ html[data-theme='dark'] .navbar {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-}
-
-.home-social {
-  margin-top: 0.25rem;
-}
-
-.home-meta-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-}
-
-.home-meta-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid var(--museum-border);
-  color: var(--global-text-color);
-  background: var(--museum-paper-strong);
-  font-size: 0.94rem;
-  text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-.home-meta-icons a:hover,
-.home-meta-icons a:focus {
-  background: var(--museum-ink);
-  border-color: var(--museum-ink);
-  color: var(--museum-paper-strong);
 }
 
 .news-feed {
@@ -758,7 +726,7 @@ html[data-theme='dark'] .navbar {
   display: grid;
   grid-template-columns: 7rem minmax(0, 1fr);
   gap: 1rem;
-  padding: 0.55rem 0 0;
+  padding: 0;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -782,7 +750,7 @@ html[data-theme='dark'] .navbar {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  background: var(--museum-ink);
+  background: #222222;
   color: var(--museum-paper-strong);
   text-shadow: none;
 }
@@ -871,6 +839,34 @@ footer.sticky-bottom {
   color: var(--global-text-color-light);
 }
 
+.site-footer__icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.site-footer__icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  border: 1px solid var(--museum-border);
+  color: var(--global-text-color);
+  background: transparent;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.site-footer__icons a:hover,
+.site-footer__icons a:focus {
+  background: var(--museum-ink);
+  border-color: var(--museum-ink);
+  color: var(--museum-paper-strong);
+}
+
 .site-footer__meta {
   display: grid;
   gap: 0.3rem;
@@ -944,7 +940,6 @@ footer.sticky-bottom {
   .home-copy,
   .profile-card__body,
   .home-highlights,
-  .home-social,
   .page-article,
   .cv-section,
   .publication-entry {

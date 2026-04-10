@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Department of Physics, Princeton University
 focus_areas:
@@ -9,7 +9,6 @@ focus_areas:
   - Component Separation
   - Bayesian Inference
   - Simons Observatory
-  - Large-scale Data Analysis
 
 profile:
   align: right

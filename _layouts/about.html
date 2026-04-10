@@ -6,9 +6,6 @@ layout: default
       <div class="post museum-page museum-home">
         <section class="home-hero">
           <div class="home-copy museum-panel museum-panel--hero">
-            {% if page.eyebrow %}
-            <p class="page-kicker">{{ page.eyebrow }}</p>
-            {% endif %}
             <h1 class="post-title">
              {% if site.title == "blank" -%}<span>{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
             </h1>
@@ -36,7 +33,7 @@ layout: default
           </div>
 
           <aside class="home-rail">
-            <div class="profile-card museum-panel">
+            <div class="profile-card">
               {% if page.profile and page.profile.image %}
                 {%- assign profile_image_path = page.profile.image | prepend: 'assets/img/' -%}
                 {% if page.profile.image_circular %}
@@ -44,31 +41,13 @@ layout: default
                 {% else %}
                   {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
                 {% endif %}
-                <div class="profile-card__media">
+                <div class="profile-card__media profile-card__media--portrait">
                   {% include figure.html
                   path=profile_image_path
                   class=profile_image_class
                   alt=page.profile.image -%}
                 </div>
               {% endif %}
-
-              <div class="profile-card__body">
-                {% if page.home_role %}
-                <p class="profile-card__role">{{ page.home_role }}</p>
-                {% endif %}
-                {%- if page.profile.address %}
-                <div class="address profile-card__address">
-                  {{ page.profile.address }}
-                </div>
-                {%- endif %}
-                <div class="profile-card__links">
-                  <a class="museum-button museum-button--outline museum-button--small" href="mailto:{{ site.email | encode_email }}">Email</a>
-                  <a class="museum-button museum-button--outline museum-button--small" href="{{ '/cv/' | relative_url }}">CV</a>
-                  {% if site.linkedin_username %}
-                  <a class="museum-button museum-button--subtle museum-button--small" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                  {% endif %}
-                </div>
-              </div>
             </div>
 
             {% if page.highlights %}

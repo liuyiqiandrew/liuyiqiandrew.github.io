@@ -1989,7 +1989,7 @@ footer.sticky-bottom {
     gap: 0.5rem;
   }
   .header-actions {
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin-left: 0;
     padding-top: 0.5rem;
   }

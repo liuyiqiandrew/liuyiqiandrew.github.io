@@ -1777,6 +1777,66 @@ html[data-theme=dark] .navbar {
   margin-top: 0.7rem;
 }
 
+.repo-link-card {
+  max-width: 30rem;
+  margin: 0 0 1.5rem;
+}
+
+.repo-link-card__anchor {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--museum-border);
+  background: var(--museum-paper-strong);
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.repo-link-card__anchor:hover,
+.repo-link-card__anchor:focus {
+  transform: translateY(-1px);
+  border-color: var(--museum-ink);
+  background: var(--museum-accent-soft);
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.repo-link-card__eyebrow,
+.repo-link-card__action {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.repo-link-card__eyebrow {
+  color: var(--global-text-color-light);
+}
+
+.repo-link-card__title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.repo-link-card__title i {
+  font-size: 1rem;
+}
+
+.repo-link-card__meta {
+  color: var(--global-text-color-light);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.repo-link-card__action {
+  margin-top: 0.25rem;
+}
+
 .publications {
   display: grid;
   gap: 1rem;

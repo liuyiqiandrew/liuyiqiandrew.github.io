@@ -1564,6 +1564,13 @@ html[data-theme=dark] .navbar {
   gap: 0.95rem;
 }
 
+.page-shortcuts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0 0 1.35rem;
+}
+
 .news-feed--scrollable {
   max-height: 24rem;
   overflow: auto;
@@ -1817,8 +1824,7 @@ html[data-theme=dark] .navbar {
   margin-top: 1.45rem;
 }
 
-.repo-ticket-card__name,
-.repo-ticket-card__action {
+.repo-ticket-card__name {
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.05;
@@ -1836,20 +1842,12 @@ html[data-theme=dark] .navbar {
   border-top: 2px solid var(--museum-ink);
 }
 
-.repo-ticket-card__row--bottom {
-  align-items: flex-start;
-  margin-top: 0;
-}
-
 .repo-ticket-card__description {
-  max-width: 18rem;
+  display: block;
   color: var(--global-text-color);
   font-size: 1rem;
   line-height: 1.4;
-}
-
-.repo-ticket-card__action {
-  white-space: nowrap;
+  margin-top: 0;
 }
 
 .publications {

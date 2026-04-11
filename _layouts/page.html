@@ -5,6 +5,14 @@ layout: default
         <div class="post museum-page museum-content-page">
 
           <header class="post-header">
+            {% if page.collection == 'projects' %}
+            <div class="page-nav">
+              <a class="museum-button museum-button--outline museum-button--small" href="{{ '/projects/' | relative_url }}">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span>Back to Projects</span>
+              </a>
+            </div>
+            {% endif %}
             {% if page.kicker %}
             <p class="page-kicker">{{ page.kicker }}</p>
             {% endif %}

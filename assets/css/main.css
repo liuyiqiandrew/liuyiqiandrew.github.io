@@ -1136,8 +1136,7 @@ h6,
 .museum-button,
 .page-kicker,
 .site-mark__name,
-.cv-section__title,
-.project-category {
+.cv-section__title {
   font-family: "Archivo", sans-serif;
 }
 
@@ -1620,33 +1619,49 @@ html[data-theme=dark] .navbar {
 
 .cv-section__title {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
 .cv-map {
-  width: 100%;
-  border-collapse: collapse;
+  display: grid;
+  gap: 0;
+  margin: 0;
 }
 
-.cv-map tr + tr {
+.cv-map__row {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 0.85rem 0;
+}
+
+.cv-map__row + .cv-map__row {
   border-top: 1px solid var(--museum-border);
 }
 
-.cv-map td {
-  padding: 0.8rem 0;
-  vertical-align: top;
+.cv-map__row:first-child {
+  padding-top: 0;
+}
+
+.cv-map__row:last-child {
+  padding-bottom: 0;
 }
 
 .cv-map__label {
   width: 11rem;
-  font-size: 0.73rem;
+  margin: 0;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--global-text-color-light);
+}
+
+.cv-map__value {
+  margin: 0;
 }
 
 .cv-timeline,
@@ -1654,6 +1669,16 @@ html[data-theme=dark] .navbar {
 .cv-nested-list,
 .cv-subitems {
   margin: 0;
+}
+
+.cv-map__value,
+.cv-items,
+.cv-subitems,
+.cv-timeline__institution,
+.cv-timeline__body,
+.cv-nested-list {
+  font-size: 1.12rem;
+  line-height: 1.55;
 }
 
 .cv-timeline,
@@ -1693,7 +1718,7 @@ html[data-theme=dark] .navbar {
 .cv-timeline__title,
 .cv-nested-list__title {
   margin: 0;
-  font-size: 1.08rem;
+  font-size: 1.18rem;
   font-weight: 700;
 }
 
@@ -1719,15 +1744,6 @@ html[data-theme=dark] .navbar {
 .cv-subitems {
   padding-left: 1rem;
   margin-top: 0.45rem;
-}
-
-.project-category {
-  margin-bottom: 0.4rem;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--global-theme-color);
 }
 
 .projects .card {
@@ -1885,9 +1901,9 @@ footer.sticky-bottom {
 
 .site-footer__inner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
 }
 
 .site-footer__title {
@@ -1936,6 +1952,7 @@ footer.sticky-bottom {
   display: grid;
   gap: 0.3rem;
   max-width: 32rem;
+  text-align: left;
 }
 
 @media (max-width: 991.98px) {
@@ -1978,6 +1995,13 @@ footer.sticky-bottom {
   }
   .cv-timeline__row {
     grid-template-columns: 1fr;
+  }
+  .cv-map__row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .cv-map__label {
+    width: auto;
   }
 }
 @media (max-width: 767.98px) {

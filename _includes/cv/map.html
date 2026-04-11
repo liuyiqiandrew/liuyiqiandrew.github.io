@@ -1,8 +1,8 @@
-<table class="table-cv-map cv-map">
+<dl class="cv-map">
   {% for content in entry.contents %}
-    <tr>
-      <td class="cv-map__label">{{ content.name }}</td>
-      <td class="cv-map__value">{{ content.value }}</td>
-    </tr>
+    <div class="cv-map__row">
+      <dt class="cv-map__label">{{ content.name }}</dt>
+      <dd class="cv-map__value">{{ content.value }}</dd>
+    </div>
   {% endfor %}
-</table>
+</dl>

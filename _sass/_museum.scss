@@ -199,6 +199,30 @@ h3 {
   font-size: 0.7rem;
 }
 
+.museum-link-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.2rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--global-text-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 0 transparent;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.museum-link-nav:hover,
+.museum-link-nav:focus {
+  color: var(--museum-ink);
+  text-decoration: none;
+  box-shadow: inset 0 -2px 0 0 var(--museum-ink);
+}
+
 .site-header {
   position: relative;
   z-index: 1030;

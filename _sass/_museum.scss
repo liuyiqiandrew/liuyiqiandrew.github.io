@@ -727,7 +727,7 @@ html[data-theme='dark'] .navbar {
   display: grid;
   gap: 0;
   padding: 1.35rem 1.45rem 1.2rem;
-  border: 3px solid var(--museum-ink);
+  border: 4px solid var(--museum-ink);
   background: var(--museum-paper-strong);
   color: var(--global-text-color);
   text-decoration: none;
@@ -774,7 +774,7 @@ html[data-theme='dark'] .navbar {
 .repo-ticket-card__divider {
   display: block;
   margin: 1.15rem 0 1rem;
-  border-top: 2px solid rgba(17, 17, 17, 0.22);
+  border-top: 2px solid var(--museum-ink);
 }
 
 .repo-ticket-card__row--bottom {

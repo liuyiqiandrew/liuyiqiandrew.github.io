@@ -11,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Needlet ILC | Yiqi "Andrew" Liu</title>
-    <meta name="author" content="Yiqi " andrew liu>
-    <meta name="description" content="A method for combining multi-band sky maps to isolate a faint target signal from contamination and instrument noise.">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <meta name="author" content='Yiqi "Andrew" Liu'>
+    <meta name="description" content="Needlet-domain component separation for combining sky maps across frequencies and spatial scales.">
+    <meta name="keywords" content="Yiqi Liu, Andrew Liu, Princeton, cosmology, cosmic microwave background, component separation, statistical inference, scientific AI">
 
 
     <!-- Bootstrap & MDB -->
@@ -91,7 +91,9 @@
 </ul>
 
               <div class="header-actions">
-                <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v2.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                
+                <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v3.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                
                 <a class="museum-button museum-button--solid museum-button--small" href="mailto:%61%6E%64%72%65%77.%6C%69%75@%70%72%69%6E%63%65%74%6F%6E.%65%64%75">Email</a>
               </div>
             </div>
@@ -120,7 +122,7 @@
             
             <h1 class="post-title">Needlet ILC</h1>
             
-            <p class="post-description">A method for combining multi-band sky maps to isolate a faint target signal from contamination and instrument noise.</p>
+            <p class="post-description">Needlet-domain component separation for combining sky maps across frequencies and spatial scales.</p>
             
           </header>
 
@@ -137,13 +139,11 @@
   </a>
 </div>
 
-<p><strong>Problem.</strong> When a telescope observes the sky in several frequency bands, each map contains a mixture of things you want and things you do not want. In this case, the target is the cosmic microwave background, while the unwanted parts include Galactic emission, point sources, and detector noise. The challenge is to combine the maps so that the shared target signal remains while the contamination is reduced as much as possible.</p>
+<p><strong>Problem.</strong> Each frequency map of the sky contains a mixture of CMB signal, Galactic emission, point sources, and detector noise. Component separation combines these observations to preserve the CMB while reducing contamination.</p>
 
-<p><strong>Method.</strong> ILC stands for <em>internal linear combination</em>. The basic idea is simple: take a weighted average of several input maps, choose the weights so the target signal is kept unchanged, and at the same time make the overall unwanted variation as small as possible. Needlet ILC adds another layer by splitting the maps into wavelet-like pieces called <em>needlets</em>, so the weights can change with both spatial scale and sky location. In practice, that makes the method more adaptive when contamination behaves differently in different parts of the data.</p>
+<p><strong>My work.</strong> During my undergraduate research with CLASS, I implemented and optimized a needlet-domain minimum-variance estimator. Internal linear combination (ILC) chooses frequency weights that preserve the target signal while minimizing the variance of the combined map. Needlets allow those weights to vary with spatial scale and sky location, adapting to changing foreground conditions.</p>
 
-<p><strong>Strengths.</strong> NILC is flexible, fairly intuitive, and does not require a very detailed physical model of every contaminating signal. It can work especially well when the unwanted emission changes from place to place or from large-scale structure to small-scale structure, because the weights are allowed to adapt instead of being fixed everywhere.</p>
-
-<p><strong>Limitations.</strong> The method depends on estimating correlations in the data well, so it can struggle when the inputs are very noisy, when there are too few frequency channels, or when the channels are not well matched. In those cases it may leave residual contamination behind or place too much weight on noisy data. In this implementation, the method behaves reasonably on cleaner intensity-like maps, but it is less robust on older, noisier WMAP-like data and remains a work in progress.</p>
+<p><strong>Scope and status.</strong> This repository contains the research implementation and supporting experiments. Its performance depends on estimating correlations reliably and matching the input maps. The existing implementation is less robust on noisy WMAP-like data and should be treated as research code with those limitations.</p>
 
           </article>
 
@@ -157,7 +157,7 @@
       <div class="container site-footer__inner">
         <div class="site-footer__lead">
           <p class="site-footer__title">Yiqi "Andrew" Liu</p>
-          <p class="site-footer__note">Cosmology, CMB analysis, and foreground modeling at Princeton University.
+          <p class="site-footer__note">Cosmology, statistical inference, and scientific AI at Princeton University.
 </p>
           <div class="site-footer__icons" aria-label="Profiles and contact">
             
@@ -167,7 +167,7 @@
             <a href="https://orcid.org/0000-0002-5210-8035" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
             
             
-            <a href="https://scholar.google.com/citations?user=liuyiqiandrew" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://scholar.google.com/citations?user=w5T-N04AAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
             
             
             <a href="https://github.com/liuyiqiandrew" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
@@ -224,7 +224,6 @@
     };
   </script>
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
     
     

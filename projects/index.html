@@ -11,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Projects | Yiqi "Andrew" Liu</title>
-    <meta name="author" content="Yiqi " andrew liu>
-    <meta name="description" content="Selected analyses, pipelines, and side projects.">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <meta name="author" content='Yiqi "Andrew" Liu'>
+    <meta name="description" content="Open-source tools for cosmology, scientific AI evaluation, and reinforcement learning.">
+    <meta name="keywords" content="Yiqi Liu, Andrew Liu, Princeton, cosmology, cosmic microwave background, component separation, statistical inference, scientific AI">
 
 
     <!-- Bootstrap & MDB -->
@@ -91,7 +91,9 @@
 </ul>
 
               <div class="header-actions">
-                <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v2.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                
+                <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v3.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                
                 <a class="museum-button museum-button--solid museum-button--small" href="mailto:%61%6E%64%72%65%77.%6C%69%75@%70%72%69%6E%63%65%74%6F%6E.%65%64%75">Email</a>
               </div>
             </div>
@@ -115,7 +117,7 @@
             
             <h1 class="post-title">Projects</h1>
             
-            <p class="post-description">Selected analyses, pipelines, and side projects.</p>
+            <p class="post-description">Open-source tools for cosmology, scientific AI evaluation, and reinforcement learning.</p>
             
           </header>
 
@@ -123,33 +125,45 @@
             <!-- pages/projects.md -->
 <div class="projects">
   <!-- Display categorized projects -->
-  <h2 class="category">ordered</h2>
+  <h2 class="category">Cosmology &amp; Inference</h2>
   <!-- Generate cards for each project -->
   <div class="grid">
 <!-- _includes/projects.html -->
 <div class="grid-sizer"></div>
 <div class="grid-item">
+  <a href="/projects/foreground-template-fitting/">
+      <div class="card hoverable">
+        <div class="card-body">
+          <h2 class="card-title">Foreground Template Fitting</h2>
+          <p class="card-text">Weighted fits to polarized sky maps, with harmonic filtering and Monte Carlo uncertainty propagation.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/gaussky/">
+      <div class="card hoverable">
+        <div class="card-body">
+          <h2 class="card-title">gaussky</h2>
+          <p class="card-text">A lightweight simulator for Gaussian CMB and Galactic foreground sky maps at multiple frequencies.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
   <a href="/projects/NILC/">
       <div class="card hoverable">
-<figure>
-
-  <picture>
-    
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/12-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/12-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/12-1400.webp"></source>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/12.jpg" width="auto" height="auto" alt="project thumbnail" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
         <div class="card-body">
           <h2 class="card-title">Needlet ILC</h2>
-          <p class="card-text">A method for combining multi-band sky maps to isolate a faint target signal from contamination and instrument noise.</p>
+          <p class="card-text">Needlet-domain component separation for combining sky maps across frequencies and spatial scales.</p>
           <div class="row ml-1 mr-1 p-0">
           </div>
         </div>
@@ -158,9 +172,38 @@
 </div>
 
   </div>
-  <h2 class="category">chaotic</h2>
+  <h2 class="category">AI &amp; Machine Learning</h2>
   <!-- Generate cards for each project -->
   <div class="grid">
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/terminal-bench-science/">
+      <div class="card hoverable">
+        <div class="card-body">
+          <h2 class="card-title">Terminal-Bench-Science</h2>
+          <p class="card-text">Scientific tasks that evaluate how AI agents build, test, and revise models in computational research.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+<!-- _includes/projects.html -->
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="/projects/auto-bidding/">
+      <div class="card hoverable">
+        <div class="card-body">
+          <h2 class="card-title">Sequential Auto-Bidding</h2>
+          <p class="card-text">PPO agents for replay-based auctions with budget constraints and changing market conditions.</p>
+          <div class="row ml-1 mr-1 p-0">
+          </div>
+        </div>
+      </div>
+    </a>
+</div>
+
   </div>
 </div>
 
@@ -176,7 +219,7 @@
       <div class="container site-footer__inner">
         <div class="site-footer__lead">
           <p class="site-footer__title">Yiqi "Andrew" Liu</p>
-          <p class="site-footer__note">Cosmology, CMB analysis, and foreground modeling at Princeton University.
+          <p class="site-footer__note">Cosmology, statistical inference, and scientific AI at Princeton University.
 </p>
           <div class="site-footer__icons" aria-label="Profiles and contact">
             
@@ -186,7 +229,7 @@
             <a href="https://orcid.org/0000-0002-5210-8035" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
             
             
-            <a href="https://scholar.google.com/citations?user=liuyiqiandrew" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://scholar.google.com/citations?user=w5T-N04AAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
             
             
             <a href="https://github.com/liuyiqiandrew" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
@@ -243,7 +286,6 @@
     };
   </script>
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
     
     

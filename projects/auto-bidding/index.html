@@ -10,11 +10,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>code | Yiqi "Andrew" Liu</title>
-    <meta name="author" content="Yiqi " andrew liu>
-    <meta name="description" content="Cosmology, CMB analysis, and foreground modeling at Princeton University.
-">
-    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
+    <title>Sequential Auto-Bidding | Yiqi "Andrew" Liu</title>
+    <meta name="author" content='Yiqi "Andrew" Liu'>
+    <meta name="description" content="PPO agents for replay-based auctions with budget constraints and changing market conditions.">
+    <meta name="keywords" content="Yiqi Liu, Andrew Liu, Princeton, cosmology, cosmic microwave background, component separation, statistical inference, scientific AI">
 
 
     <!-- Bootstrap & MDB -->
@@ -41,7 +40,7 @@
     <link rel="shortcut icon" href="/assets/img/favicon.png">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://liuyiqiandrew.github.io/blog/tag/code/">
+    <link rel="canonical" href="https://liuyiqiandrew.github.io/projects/auto-bidding/">
 
     <!-- Dark Mode -->
     
@@ -92,7 +91,9 @@
 </ul>
 
               <div class="header-actions">
-                <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v2.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                
+                <a class="museum-button museum-button--outline museum-button--small" href="/assets/pdf/Andrew_CV_v3.pdf" target="_blank" rel="noopener noreferrer">CV PDF</a>
+                
                 <a class="museum-button museum-button--solid museum-button--small" href="mailto:%61%6E%64%72%65%77.%6C%69%75@%70%72%69%6E%63%65%74%6F%6E.%65%64%75">Email</a>
               </div>
             </div>
@@ -106,29 +107,47 @@
     <main class="site-main">
       <div class="container site-content">
         
-          <div class="post">
+          <!-- page.html -->
+        <div class="post museum-page museum-content-page">
 
-  <header class="post-header">
-    <h1 class="post-title"> <i class="fas fa-hashtag fa-sm"></i> code </h1>
-    <p class="post-description"> an archive of posts with this tag </p>
-  </header>
+          <header class="post-header">
+            
+            <div class="page-nav">
+              <a class="museum-link-nav" href="/projects/">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span>Back to Projects</span>
+              </a>
+            </div>
+            
+            
+            <h1 class="post-title">Sequential Auto-Bidding</h1>
+            
+            <p class="post-description">PPO agents for replay-based auctions with budget constraints and changing market conditions.</p>
+            
+          </header>
 
-  <article>
-    <div class="table-responsive">
-      <table class="table table-sm table-borderless">
-        
-        <tr>
-          <th scope="row">Jul 15, 2015</th>
-          <td>
-              <a class="post-link" href="/blog/2015/code/">a post with code</a>
-          </td>
-        </tr>
-      
-      </table>
-    </div>
-  </article>
-
+          <article class="page-article museum-panel">
+            <div class="repo-ticket-card">
+  <a class="repo-ticket-card__anchor" href="https://github.com/liuyiqiandrew/AuctionNet" target="_blank" rel="noopener noreferrer">
+    <span class="repo-ticket-card__title">Sequential Auto-Bidding</span>
+    <span class="repo-ticket-card__row">
+      <span class="repo-ticket-card__name">liuyiqiandrew/AuctionNet</span>
+      <span class="repo-ticket-card__platform">GitHub</span>
+    </span>
+    <span class="repo-ticket-card__divider" aria-hidden="true"></span>
+    <span class="repo-ticket-card__description">Reinforcement-learning experiments built on the AuctionNet auto-bidding benchmark.</span>
+  </a>
 </div>
+
+<p><strong>Problem.</strong> An automated bidder makes a sequence of decisions under budget and cost-per-action constraints. Good decisions depend on both the current auction and how spending affects opportunities later in the episode.</p>
+
+<p><strong>My contribution.</strong> I developed PPO agents in a replay-based auction environment, extending their observations and policies with temporal stacking and recurrent representations. I used controlled experiments and ablations to study reward shaping, market-state features, and policy architectures under changing market conditions.</p>
+
+<p><strong>Context and status.</strong> This work was part of a group project for COS 435, Introduction to Reinforcement Learning, at Princeton in Spring 2026. The repository builds on the AuctionNet benchmark and includes the group’s broader PPO and LLM experiments; the work described here focuses on my PPO contributions.</p>
+
+          </article>
+
+        </div>
 
         
       </div>
@@ -138,7 +157,7 @@
       <div class="container site-footer__inner">
         <div class="site-footer__lead">
           <p class="site-footer__title">Yiqi "Andrew" Liu</p>
-          <p class="site-footer__note">Cosmology, CMB analysis, and foreground modeling at Princeton University.
+          <p class="site-footer__note">Cosmology, statistical inference, and scientific AI at Princeton University.
 </p>
           <div class="site-footer__icons" aria-label="Profiles and contact">
             
@@ -148,7 +167,7 @@
             <a href="https://orcid.org/0000-0002-5210-8035" title="ORCID" rel="external nofollow noopener" target="_blank"><i class="ai ai-orcid"></i></a>
             
             
-            <a href="https://scholar.google.com/citations?user=liuyiqiandrew" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://scholar.google.com/citations?user=w5T-N04AAAAJ" title="Google Scholar" rel="external nofollow noopener" target="_blank"><i class="ai ai-google-scholar"></i></a>
             
             
             <a href="https://github.com/liuyiqiandrew" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fab fa-github"></i></a>
@@ -205,7 +224,6 @@
     };
   </script>
   <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
-  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
     
     

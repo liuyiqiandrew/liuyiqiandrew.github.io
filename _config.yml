@@ -7,11 +7,12 @@ first_name: Yiqi
 middle_name: "\u0022Andrew\u0022"
 last_name: Liu
 email: andrew.liu@princeton.edu
+cv_pdf: Andrew_CV_v3.pdf # shared by the navigation and CV page
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Cosmology, CMB analysis, and foreground modeling at Princeton University.
+  Cosmology, statistical inference, and scientific AI at Princeton University.
 footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and deployed on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: Yiqi Liu, Andrew Liu, Princeton, cosmology, cosmic microwave background, component separation, statistical inference, scientific AI
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.png  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -43,7 +44,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -75,7 +76,7 @@ twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: yiqi-liu-andrew # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: liuyiqiandrew # your Google Scholar ID
+scholar_userid: w5T-N04AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0000-0002-5210-8035 # your ORCID ID
@@ -126,7 +127,7 @@ permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
   enabled: true
@@ -155,9 +156,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -207,6 +206,17 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  # Keep the theme examples in source without publishing them.
+  - _posts
+  - blog
+  - _pages/teaching.md
+  - _pages/repositories.md
+  - _pages/dropdown.md
+  - _projects/2_project.md
+  - _projects/3_project.md
+  - _projects/4_project.md
+  - _projects/5_project.md
+  - _projects/6_project.md
 keep_files:
   - CNAME
   - .nojekyll
@@ -249,7 +259,7 @@ jekyll-minifier:
 # -----------------------------------------------------------------------------
 
 jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+  enabled: []
   layouts:
     year: archive-year
     tag: archive-tag

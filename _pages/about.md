@@ -5,10 +5,10 @@ permalink: /
 subtitle: Department of Physics, Princeton University
 focus_areas:
   - Cosmic Microwave Background
-  - Foreground Complexity
+  - Galactic Foregrounds
   - Component Separation
-  - Bayesian Inference
-  - Simons Observatory
+  - Statistical Inference
+  - Scientific AI
 
 profile:
   align: right
@@ -21,12 +21,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am Yiqi Liu (刘逸奇), and I usually go by Andrew. I am a physics Ph.D. student at Princeton University advised by Jo Dunkley. My research focuses on the cosmic microwave background, especially foreground complexity, component separation, and statistical inference for primordial B-mode searches.
+I am Yiqi Liu (刘逸奇), and I usually go by Andrew. I am a physics Ph.D. student at Princeton University advised by [Jo Dunkley](https://www.jodunkley.com/). My research connects understanding our own Galaxy with learning how the Universe began. With the Simons Observatory, I study the cosmic microwave background (CMB), light left over from the early Universe, to search for evidence of primordial gravitational waves.
+
+Galactic dust produces a much brighter polarized signal than the one we seek, and errors in modeling it can mimic a cosmological signal. I use controlled simulations to understand when foreground models fail. I am developing [template-fitting tools]({{ '/projects/foreground-template-fitting/' | relative_url }}) to measure how dust emission changes across frequencies in Planck and Simons Observatory maps, and extending these diagnostics to probe different angular scales.
+
+My broader interests include scientific AI and reliable statistical inference. I am exploring self-supervised learning and simulation-based inference to extract information about dust structure that conventional power spectra can miss, and to cross-check cosmological conclusions under different modeling assumptions. I also contribute to [Terminal-Bench-Science](https://github.com/harbor-framework/terminal-bench-science), designing and reviewing tasks that evaluate AI agents' scientific reasoning.
 
 Before Princeton, I studied applied mathematics and statistics, physics, and mathematics at Johns Hopkins University, with a minor in computer science. There I worked with Tobias Marriage and Charles Bennett on the CLASS experiment, and with Nadia Zakamska and Hsiang-Chih Hwang on stellar astrophysics.
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->

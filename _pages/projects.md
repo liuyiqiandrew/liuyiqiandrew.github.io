@@ -3,10 +3,10 @@ layout: page
 title: Projects
 permalink: /projects/
 kicker: Methods and Tools
-description: "Selected analyses, pipelines, and side projects."
+description: "Open-source tools for cosmology, scientific AI evaluation, and reinforcement learning."
 nav: true
 nav_order: 3
-display_categories: [ordered, chaotic]
+display_categories: ["Cosmology & Inference", "AI & Machine Learning"]
 horizontal: false
 ---
 

@@ -11,16 +11,18 @@
       value: (667) 218-8691
     - name: LinkedIn
       value: <a href="https://www.linkedin.com/in/yiqi-liu-andrew">yiqi-liu-andrew</a>
+    - name: GitHub
+      value: <a href="https://github.com/liuyiqiandrew">liuyiqiandrew</a>
 
 - title: Education
   type: time_table
   contents:
     - title: Ph.D. in Physics
       institution: Princeton University, Princeton, New Jersey, United States
-      year: Expected Jun 2029
+      year: Expected 2029
       description:
         - "<b>Advisor:</b> Jo Dunkley"
-        - "<b>Research interests:</b> Cosmic Microwave Background, component separation, diffuse Galactic foregrounds, statistical inference, Monte Carlo simulation, large-scale data analysis, and harmonic-space analysis."
+        - "<b>Research interests:</b> Statistical inference, Monte Carlo methods, machine learning, simulation-based inference, cosmic microwave background, component separation, and Galactic foregrounds."
     - title: M.A. in Physics
       institution: Princeton University, Princeton, New Jersey, United States
       year: Jan 2025
@@ -41,10 +43,10 @@
     - year: 2022
       items:
         - Sigma Pi Sigma Physics Honors Society
-        - Provost's Undergraduate Research Award, JHU funded research support
+        - Provost's Undergraduate Research Award, JHU, $6,000 in funded research support
     - year: 2020 - 2021
       items:
-        - Bloomberg Distinguished Professor Research Fellowship x2
+        - Bloomberg Distinguished Professor Research Fellowship ×2, JHU, $10,000 in funded research support
     - year: 2020 - 2022
       items:
         - Dean's List
@@ -52,9 +54,15 @@
 - title: Selected Publications
   type: nested_list
   contents:
-    - title: <a href="https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-5210-8035&sort=date+desc">NASA ADS profile</a>
+    - title: "<a href='https://doi.org/10.1088/1475-7516/2025/11/024'>The Simons Observatory: assessing the impact of dust complexity on the recovery of primordial B-modes</a>"
       items:
-        - <a href="/publications/">Selected papers on this site</a>
+        - Yiqi Liu et al. — JCAP (2025), 11, 024.
+    - title: "<a href='https://doi.org/10.1093/mnras/stad1156'>CSS1603+19: a low-mass polar near the cataclysmic variable period minimum</a>"
+      items:
+        - Yiqi Liu, Hsiang-Chih Hwang, Nadia L. Zakamska, John R. Thorstensen — MNRAS (2023), 522, 2719–2731.
+    - title: Publication profiles
+      items:
+        - <a href="https://ui.adsabs.harvard.edu/public-libraries/GbkH5Kq6QTmSGGxvzU7YMw">NASA ADS</a> · <a href="https://scholar.google.com/citations?user=w5T-N04AAAAJ">Google Scholar</a>
 
 - title: Research Experience
   type: time_table
@@ -63,66 +71,94 @@
       institution: "Princeton, NJ | Mentors: Jo Dunkley, Susanna Azzoni"
       year: 2023 - Present
       description:
-        - Developed per-scale regression-based component separation algorithms to extract weak cosmological signals from noisy high-dimensional data.
-        - Investigated non-Gaussian statistics for next-generation foreground cleaning.
-        - Demonstrated that dust complexity biases cosmological inference using MCMC and Bayesian analysis.
-        - Quantified robustness of SO pipelines under various foreground complexity scenarios.
-        - Implemented pipelines for SO x Planck cross-correlation to validate instrument performance.
+        - Led a first-author study of model misspecification in cosmological inference using cross-spectrum component separation and realistic simulation ensembles.
+        - Developed regression and template-fitting estimators for multi-frequency polarization data, including weighted cross-template fits, harmonic filtering, and Monte Carlo uncertainty propagation.
+        - Designed Bayesian/MCMC and simulation analyses to quantify estimator bias, uncertainty, covariance, chance correlations, and robustness under foreground model misspecification.
+        - Built SO×Planck cross-correlation and calibration pipelines to validate instrument performance and foreground measurements against independent data.
     - title: Undergraduate Researcher | Cosmology Large Angular Scale Surveyor
       institution: "Baltimore, MD | Mentors: Charles L. Bennett, Tobias A. Marriage, Ivan L. Padilla"
       year: 2019 - 2023
       description:
-        - Implemented and optimized a minimum-variance estimator (Needlet Internal Linear Combination) for multi-frequency signal decomposition.
-        - Built polarization-based foreground masks and benchmarked estimator performance across frequency bands.
-        - Developed and tested point-source identification algorithms using Fourier-space filtering techniques.
-        - Created Python routines to detect temporal anomalies via rolling-dispersion diagnostics in time-series data.
+        - Implemented and optimized a needlet-domain minimum-variance estimator for multi-frequency signal decomposition.
+        - Developed foreground masking and Fourier-space point-source detection methods and benchmarked estimator performance across frequency bands.
+        - Built Python diagnostics for temporal anomaly detection in observational time-series data using rolling-dispersion statistics.
     - title: Undergraduate Researcher | Zakamska Astrophysics Group
       institution: "Baltimore, MD | Mentors: Nadia L. Zakamska, Hsiang-Chih Hwang"
       year: 2021 - 2023
       description:
-        - First-authored a publication modeling complex binary star systems using spectral decomposition and time-series fitting.
-        - Automated a Python-based photometric and spectral analysis pipeline for feature extraction in both time and frequency domains.
+        - First-authored a peer-reviewed study modeling a compact binary system using spectral decomposition and time-series fitting.
+        - Developed automated Python pipelines for photometric and spectroscopic feature extraction in the time and frequency domains.
+
+- title: Selected Technical Projects
+  type: time_table
+  contents:
+    - title: Benchmarking Scientific Reasoning in AI Agents | Terminal-Bench-Science
+      institution: <a href="https://github.com/harbor-framework/terminal-bench-science">Terminal-Bench-Science</a>
+      year: 2026 - Present
+      description:
+        - Design executable scientific tasks that test whether AI agents construct models that generalize beyond visible evaluation constraints.
+        - Authored a CMB inference benchmark targeting model misspecification and restrictive assumptions that can remain statistically adequate on observed data while failing under hidden evaluation conditions.
+        - Review astronomy and physics tasks for scientific validity, difficulty, verifier robustness, reproducibility, and potential shortcut solutions.
+    - title: Representation Learning and Simulation-Based Inference for Cosmology
+      year: 2026 - Present
+      description:
+        - Developing VICReg-based self-supervised representations of simulated CMB observations for downstream inference of the tensor-to-scalar ratio r.
+        - Investigating learned low-dimensional summaries that retain cosmological parameter information while remaining robust to foreground and observational variation.
+        - Exploring simulation-based inference for likelihood-free posterior estimation using learned representations.
+    - title: Reinforcement Learning for Sequential Auto-Bidding
+      institution: <a href="https://github.com/liuyiqiandrew/AuctionNet">AuctionNet</a> · COS 435 group project, Princeton University
+      year: Spring 2026
+      description:
+        - Developed PPO agents for sequential decision making in a replay-based auction environment subject to budget and cost-per-action constraints.
+        - Extended the policy with temporal observation stacking and recurrent representations to capture nonstationary market dynamics and long-horizon dependencies.
+        - Evaluated reward shaping, market-state features, and alternative policy architectures through controlled experiments and ablations.
+    - title: Transformer Inference Systems Benchmarking
+      year: Spring 2026
+      description:
+        - Designed controlled experiments to study the compute–memory tradeoff of KV caching in decoder-only transformers across prompt and generation lengths.
+        - Benchmarked decoding throughput, end-to-end latency, cache footprint, and GPU memory behavior under cached and non-cached inference.
+        - Characterized cache-memory scaling, prefix reuse, CUDA allocator behavior, and performance degradation under CPU–GPU memory offloading.
 
 - title: Selected Talks and Presentations
   type: time_table
   contents:
     - title: "Simons Observatory: Assessing and Modeling Foreground Complexity in CMB Analyses"
-      institution: 2026 American Physics Society Global Physics Summit, Denver, CO
+      institution: Oral presentation · 2026 American Physical Society Global Physics Summit, Denver, CO
       year: 2026 Mar
     - title: "The impact of dust complexity on the recovery of r"
-      institution: Pan-Experiment Galactic Science Group, Los Angeles, CA
+      institution: Invited talk · Pan-Experiment Galactic Science Group, Los Angeles, CA
       year: 2025 Oct
     - title: "From the Impact of Dust Complexity to Beyond"
-      institution: 2025 SO Collaboration Meeting, Philadelphia, PA
+      institution: Invited talk · 2025 Simons Observatory Collaboration Meeting, Philadelphia, PA
       year: 2025 Jul
     - title: "Understanding the impact of dust complexity on the recovery of the tensor-to-scalar ratio"
-      institution: 246th Meeting of the American Astronomical Society, Anchorage, AK
+      institution: Oral presentation · 246th Meeting of the American Astronomical Society, Anchorage, AK
       year: 2025 Jun
     - title: "Understanding the impact of dust complexity on bias in r"
-      institution: 2024 SO Collaboration Meeting, Chicago, IL
+      institution: Invited talk · 2024 Simons Observatory Collaboration Meeting, Chicago, IL
       year: 2024 Jul
     - title: "CMB analysis using the global-NILC method"
-      institution: 2023 American Physics Society March Meeting, Las Vegas, NV
+      institution: Poster · 2023 American Physical Society March Meeting, Las Vegas, NV
       year: 2023 Mar
-    - title: "CSS1603+19: a low mass polar at the cataclysmic variable period minimum"
-      institution: 241st Meeting of the American Astronomical Society, Seattle, WA
+    - title: "CSS1603+19: a low-mass polar at the cataclysmic variable period minimum"
+      institution: Poster · 241st Meeting of the American Astronomical Society, Seattle, WA
       year: 2023 Jan
 
 - title: Teaching
   type: time_table
   contents:
     - title: Teaching Assistant, EN.553.430/630 Intro to Statistics
-      institution: Ugrad and Grad, 82 students
+      institution: Johns Hopkins University · Undergraduate/Graduate, 82 students
       year: 2023 Spring
       description:
         - Graduate-level introductory statistics course covering stochastic convergence, point estimation, hypothesis testing, and interval estimation.
     - title: Teaching Assistant, EN.553.633 Monte Carlo Method
-      institution: Grad, 60 students
+      institution: Johns Hopkins University · Graduate, 60 students
       year: 2022 Fall
       description:
-        - Graduate-level course covering pseudo-random number generators and classic Monte Carlo simulation algorithms such as Metropolis-Hastings.
+        - Graduate-level course covering pseudorandom number generators and classical Monte Carlo algorithms including Metropolis–Hastings.
     - title: Teaching Assistant, AS.171.103 General Physics I
-      institution: Ugrad, 23 students over 2 semesters
+      institution: Johns Hopkins University · Undergraduate, 23 students, 2 semesters
       year: 2020/2022 Fall
       description:
         - Undergraduate-level introductory physics on classical mechanics.
@@ -131,12 +167,10 @@
   type: map
   contents:
     - name: Programming
-      value: Python, C++, C, SQL, Bash, Mathematica
-    - name: Scientific Computing
-      value: MCMC methods, Bayesian sampling, HPC (Slurm)
-    - name: Machining
-      value: Tormach CNC Mill, Monarch Lathes, Bridgeport Mill
+      value: Python (NumPy, SciPy, Pandas, PyTorch, scikit-learn), C++, C, SQL, Bash, Mathematica
+    - name: Statistics & Machine Learning
+      value: Bayesian inference, MCMC, Monte Carlo methods, regression, covariance estimation, time-series and spectral analysis, reinforcement learning, representation learning, simulation-based inference
+    - name: Computing
+      value: High-performance computing (Slurm), Git, JupyterLab, LaTeX
     - name: Languages
       value: English (fluent), Mandarin (native)
-    - name: Other
-      value: JupyterLab, LaTeX, Git, SolidWorks, Rowing, Alpine Skiing

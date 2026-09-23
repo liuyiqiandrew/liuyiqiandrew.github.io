@@ -1,0 +1,11 @@
+<div class="repo-ticket-card">
+  <a class="repo-ticket-card__anchor" href="https://github.com/{{ include.repository }}" target="_blank" rel="noopener noreferrer">
+    <span class="repo-ticket-card__title">{{ include.title | escape }}</span>
+    <span class="repo-ticket-card__row">
+      <span class="repo-ticket-card__name">{{ include.repository | escape }}</span>
+      <span class="repo-ticket-card__platform">GitHub</span>
+    </span>
+    <span class="repo-ticket-card__divider" aria-hidden="true"></span>
+    <span class="repo-ticket-card__description">{{ include.description | escape }}</span>
+  </a>
+</div>

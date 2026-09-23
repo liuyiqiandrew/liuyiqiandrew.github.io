@@ -729,6 +729,7 @@ html[data-theme='dark'] .navbar {
 }
 
 .projects .card {
+  min-height: 14rem;
   border: 1px solid var(--museum-border);
   border-radius: 0;
   overflow: hidden;
@@ -800,6 +801,8 @@ html[data-theme='dark'] .navbar {
 }
 
 .repo-ticket-card__name {
+  min-width: 0;
+  overflow-wrap: anywhere;
   font-size: 1.15rem;
   font-weight: 700;
   line-height: 1.05;
